@@ -1,0 +1,12 @@
+@import "../../css-config/mixins.scss";
+.title-blog{
+    max-width: 85%;
+    margin: 180px auto 200px auto;
+    h1{
+        font-size: 80px;
+        letter-spacing: 3px;
+        text-align: center;
+        font-weight: 600;
+        padding: 0;
+    }
+}

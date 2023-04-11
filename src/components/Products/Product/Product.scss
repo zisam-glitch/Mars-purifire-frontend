@@ -1,0 +1,6 @@
+@import "../../../css-config/mixins.scss";
+
+.product-cardm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
