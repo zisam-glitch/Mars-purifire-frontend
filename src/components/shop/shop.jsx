@@ -32,7 +32,7 @@ return (
         <div className="main-content">
             <div className="layout">
                 <Products
-                    headingText="Popular Products"
+                    headingText="Shop"
                     products={products}
                 />
                 
