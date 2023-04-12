@@ -10,6 +10,10 @@ import vds from "../../../assets/GenZ-compressed.mp4"
 import Prod from "../../../assets/products/gen-x.webp";
 
 import { AiFillCalendar } from "react-icons/ai";
+import icon1 from "../../../assets/icon/svgexport-9.svg"
+import icon2 from "../../../assets/icon/svgexport-10.svg"
+import icon3 from "../../../assets/icon/svgexport-11.svg"
+import icon4 from "../../../assets/icon/svgexport-12.svg"
 import vs1 from "../../../assets/category/1.webp"
 import vs2 from "../../../assets/category/2.webp"
 import vs3 from "../../../assets/category/3.webp"
@@ -18,6 +22,9 @@ import vs5 from "../../../assets/category/5.webp"
 import vs6 from "../../../assets/category/6.webp"
 import vs7 from "../../../assets/category/7.webp"
 import vs8 from "../../../assets/category/8.webp"
+import gal1 from "../../../assets/category/1331.webp"
+import gal2 from "../../../assets/category/1332.webp"
+import gal3 from "../../../assets/category/1333.webp"
 
 const Banner = () => {
     return (
@@ -111,7 +118,7 @@ const Banner = () => {
                 <div className="icon-info">
                     <div className="left-1">
                         <div className="card-icon">
-                            <AiFillCalendar className="icon-c" />
+                            <img src={icon1} alt="" />
                             <h1 className="header-icon">Ultra Portable</h1>
                             <span className="desc-icon">Plug and play air purification. No need to knock down walls or use expensive mechanical ventilation such as HVAC.</span>
                         </div>
@@ -119,14 +126,14 @@ const Banner = () => {
                     <div className="center-2-3">
                         <div className="center-2">
                             <div className="card-icon">
-                                <AiFillCalendar className="icon-c" />
+                                <img src={icon2} alt="" />
                                 <h1 className="header-icon">ISO:29463</h1>
                                 <span className="desc-icon">Air filters validated to ISO 29463 and flow rates to ISO 14644 with documentation to support.</span>
                             </div>
                         </div>
                         <div className="center-3">
                             <div className="card-icon">
-                                <AiFillCalendar className="icon-c" />
+                                <img src={icon3} alt="" />
                                 <h1 className="header-icon">Low Maintenance Cost</h1>
                                 <span className="desc-icon">Our filters are easy to replace with minimal training. Filters only need replacing every 6 months when used in clinical practice.</span>
                             </div>
@@ -134,7 +141,7 @@ const Banner = () => {
                     </div>
                     <div className="right-4">
                         <div className="card-icon">
-                            <AiFillCalendar className="icon-c" />
+                            <img src={icon4} alt="" />
                             <h1 className="header-icon">Quiet Operation</h1>
                             <span className="desc-icon">Minimise disruption during patient care with quite operation with an average db level of less than 20db.</span>
                         </div>
@@ -178,6 +185,13 @@ const Banner = () => {
                             <h5>Mould Spores</h5>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="gal">
+                <div className="gal-img">
+                    <img src={gal1} alt="" />
+                    <img src={gal2} alt="" />
+                    <img src={gal3} alt="" />
                 </div>
             </section>
             <section className="dext">
