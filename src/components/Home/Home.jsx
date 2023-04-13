@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from "react";
 import "./Home.scss";
 import Banner from "./Banner/Banner";
 import Post from "./Post/Post";
+import Contact from "./contact/contact";
 import Products from "../Products/Products";
 import { fetchDataFromApi } from "../../utils/api";
 import { Context } from "../../utils/context";
@@ -38,12 +39,8 @@ return (
         <div className="main-content">
             <div className="layout">
                 <Post posts={posts} />
-              
-                <Products
-                    headingText="Popular Products"
-                    products={products}
-                />
-                
+                <Contact/>
+        
             </div>
         </div>
 

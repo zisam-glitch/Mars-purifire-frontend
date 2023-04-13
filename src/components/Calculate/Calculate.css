@@ -1,0 +1,138 @@
+.boddy {
+    background: white;
+    color: steelblue;
+    line-height: 1.6;
+    font-family: 'lato';
+    padding: 1em;
+  }
+  
+  .total {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .cadr-info {
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  }
+  
+  .cadr-info>* {
+    padding: 1em;
+  }
+  
+  .total {
+    background: #ffffff;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid rgba(44, 64, 69, 0.49);
+    border-collapse: collapse;
+  }
+  
+  .total {
+    text-align: center;
+  }
+  
+  .cadr-table {
+    text-align: center;
+  }
+  
+  .cadr-info h3,
+  .total h1 {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .cadr-info {
+    grid-template-columns: 1fr;
+    background: #f9feff;
+  }
+  
+  .cadr-info form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .cadr-info form label {
+    display: block;
+  }
+  
+  .cadr-info form p {
+    margin: 0;
+  }
+  
+  .cadr-info form button,
+  .cadr-info input,
+  .cadr-info textarea {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .cadr-info form button {
+    background: cyan;
+    border: 0;
+    text-transform: uppercase;
+  }
+  
+  .cadr-info form button:hover,
+  .cadr-info form button:focus {
+    background-color: skyblue;
+    color: #f9feff;
+    outline: 0;
+    transition: background-color .2s ease-out;
+  }
+  
+  @media(min-width:700px) {
+    .total {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .total>* {
+      padding: 2em;
+    }
+  }
+  
+  @media screen and (max-width: 639px) {
+  
+    .cadr-table thead {
+      display: none;
+    }
+  
+    .cadr-table tr,
+    .cadr-table td {
+      display: block;
+    }
+  
+    .cadr-table tr:not(:last-child) {
+      border-bottom: 3px solid gray;
+    }
+  
+    .cadr-table td {
+      padding-left: 54%;
+      position: relative;
+      text-align: right;
+    }
+  
+    .cadr-table td::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 45%;
+    }
+  
+    .tabledatastyle {
+      background-color: #6a78ed;
+      color: white;
+    }
+  }
