@@ -190,8 +190,8 @@ const Banner = () => {
             <section className="gal">
                 <div className="gal-img">
                     <img src={gal1} alt="" />
-                    <img src={gal2} alt="" />
                     <img src={gal3} alt="" />
+                    <img src={gal2} alt="" />                    
                 </div>
             </section>
             <section className="dext">
