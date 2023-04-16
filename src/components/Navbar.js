@@ -1,4 +1,3 @@
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 import Dropdown from './Dropdown';
@@ -6,7 +5,6 @@ import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { TbSearch } from "react-icons/tb";
 import { CgShoppingCart } from "react-icons/cg";
-import { AiOutlineHeart } from "react-icons/ai";
 import Search from "./Search/Search";
 import { Context } from "../utils/context";
 import Cart from "./Cart/Cart";
@@ -129,7 +127,7 @@ function Navbar() {
             </li>
           </ul>
           <div className="right">
-            <TbSearch className='scr'  onClick={() => setSearchModal(true)} />
+          <TbSearch className='scr'  onClick={() => setSearchModal(true)} />
             <span
               className="cart-icon"
               onClick={() => setShowCart(true)}

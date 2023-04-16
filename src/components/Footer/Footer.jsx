@@ -1,55 +1,67 @@
 import React from "react";
 import "./Footer.scss";
-import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import { FaLocationArrow, FaMobileAlt, } from "react-icons/fa";
+import { BsFillClockFill } from "react-icons/bs";
 import Payment from "../../assets/payments.png";
+import Logo from "../../assets/logo/mars-logo.png"
+import {
+    FaFacebook,
+    FaTwitter,
+    FaInstagram,
+    FaYoutube,
+} from "react-icons/fa";
+
 const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-content">
                 <div className="col">
-                    <div className="title">About</div>
                     <div className="text">
-                        Voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo eaque
-                        ipsa quae ab illo.
+                        <img src={Logo} alt="" />
+                        <p>THE specialist in air purification.</p>
+                        <span className="social-icons">
+                            <a href="https://www.facebook.com/marspurifier.uk/"><FaFacebook size={22} /></a>
+                            <a href="https://twitter.com/MarsPurifier?s=09"><FaTwitter size={22} /></a>
+                            <a href="https://youtube.com/channel/UCmt1DU9wZ8gh58Y05xUhSXw"><FaYoutube size={22} /></a>
+                            <a href="https://instagram.com/mars.purifier/?utm_medium=copy_link"><FaInstagram size={22} /> </a>
+                        </span>
+
                     </div>
                 </div>
                 <div className="col">
                     <div className="title">Contact</div>
                     <div className="c-item">
+                        <FaMobileAlt />
+                        <div className="text">Phone: 0800 099 6375</div>
+                    </div>
+                    <div className="c-item">
                         <FaLocationArrow />
                         <div className="text">
-                            Kayaloram Rd, Punnamada, Kottankulangara, Alappuzha,
-                            Kerala, 688006
+                            Headquarters Wollaton, Nottingham, United Kingdom
                         </div>
                     </div>
                     <div className="c-item">
-                        <FaMobileAlt />
-                        <div className="text">Phone: 0471 272 0261</div>
-                    </div>
-                    <div className="c-item">
-                        <FaEnvelope />
-                        <div className="text">Email: store@jsdev.com</div>
+                        <BsFillClockFill />
+                        <div className="text">Mon – Fri: 9.00am 5.00pm</div>
                     </div>
                 </div>
                 <div className="col">
-                    <div className="title">Categories</div>
-                    <span className="text">Headphones</span>
-                    <span className="text">Smart Watches</span>
-                    <span className="text">Bluetooth Speakers</span>
-                    <span className="text">Wireless Earbuds</span>
-                    <span className="text">Home Theatre</span>
-                    <span className="text">Projectors</span>
+                    <div className="title">QUICK LINKS</div>
+                    <span className="text"><Link to='/' className='fav-links'> Home </Link></span>
+                    <span className="text"><Link to='/about' className='fav-links'> About </Link></span>
+                    <span className="text"><Link to='/blog' className='fav-links'> Blog </Link></span>
+                    <span className="text"><Link to='/contact' className='fav-links'> Contact </Link></span>
+                    <span className="text"><Link to='/faqs' className='fav-links'> FAQ </Link></span>
+                    
                 </div>
                 <div className="col">
-                    <div className="title">Pages</div>
-                    <span className="text">Home</span>
-                    <span className="text">About</span>
-                    <span className="text">Privacy Policy</span>
-                    <span className="text">Returns</span>
-                    <span className="text">Terms & Conditions</span>
-                    <span className="text">Contact Us</span>
+                    <div className="title">LEGAL</div>
+                    <span className="text"><Link to='/privacy-policy' className='fav-links'> Privacy Policy </Link></span>
+                    <span className="text"><Link to='/terms-and-condition' className='fav-links'> Terms & Condition </Link></span>
+                    <span className="text"><Link to='/acceptable-use-policy' className='fav-links'> Acceptable Use Policy </Link></span>
+                    <span className="text"><Link to='/cookie-policy' className='fav-links'> Cookie Policy </Link></span>
+                    <span className="text"><Link to='/modern-slavery-act' className='fav-links'> Modern Slavery Act </Link></span>
                 </div>
             </div>
             <div className="bottom-bar">

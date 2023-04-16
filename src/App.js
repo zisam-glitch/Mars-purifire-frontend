@@ -17,9 +17,12 @@ import Hospitality from "./components/Hospitality/Hospitality";
 import GymAndFitnessStudio from "./components/GymAndFitnessStudio/GymAndFitnessStudio";
 import Contact from "./components/contact/contact";
 import Blog from "./components/Blog/Blog";
-
-
-
+import Calculate from "./components/Calculate/Calculate";
+import PrivacyPolicy from "./components/Leagal/PrivacyPolicy/PrivacyPolicy"
+import AcceptableUsePolicy from "./components/Leagal/AcceptableUsePolicy/AcceptableUsePolicy"
+import TermsAndCondition from "./components/Leagal/Terms&Condition/Terms&Condition"
+import CookiePolicy from "./components/Leagal/CookiePolicy/CookiePolicy"
+import ModernSlaveryAct from "./components/Leagal/ModernSlaveryAct/ModernSlaveryAct"
 
 
 
@@ -43,7 +46,13 @@ function App() {
                     <Route path="/shop" element={<Shop />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/blog" element={<Blog />} />
-
+                    <Route path="/calculate" element={<Calculate />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    <Route path="/acceptable-use-policy" element={<AcceptableUsePolicy />} />
+                    <Route path="/terms-and-condition" element={<TermsAndCondition />} />
+                    <Route path="/cookie-policy" element={<CookiePolicy />} />
+                    <Route path="/modern-slavery-act" element={<ModernSlaveryAct />} />
+                    
                 </Routes>
                 <Footer />
             </AppContext>

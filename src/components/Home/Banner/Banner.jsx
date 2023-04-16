@@ -187,13 +187,7 @@ const Banner = () => {
                     </div>
                 </div>
             </section>
-            <section className="gal">
-                <div className="gal-img">
-                    <img src={gal1} alt="" />
-                    <img src={gal3} alt="" />
-                    <img src={gal2} alt="" />                    
-                </div>
-            </section>
+           
             <section className="dext">
                 <TrustBy />
             </section>
@@ -209,7 +203,13 @@ const Banner = () => {
                 </div>
 
             </section>
-            <section>
+            <section className="gal">
+                <h1>Our Happy Customers</h1>
+                <div className="gal-img">
+                    <img src={gal1} alt="" />
+                    <img src={gal3} alt="" />
+                    <img src={gal2} alt="" />                    
+                </div>
             </section>
         </>
     );
