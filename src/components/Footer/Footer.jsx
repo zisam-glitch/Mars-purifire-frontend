@@ -16,6 +16,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-content">
+                
                 <div className="col">
                     <div className="text">
                         <img src={Logo} alt="" />
@@ -26,7 +27,6 @@ const Footer = () => {
                             <a href="https://youtube.com/channel/UCmt1DU9wZ8gh58Y05xUhSXw"><FaYoutube size={22} /></a>
                             <a href="https://instagram.com/mars.purifier/?utm_medium=copy_link"><FaInstagram size={22} /> </a>
                         </span>
-
                     </div>
                 </div>
                 <div className="col">

@@ -36,13 +36,12 @@ const Home = () => {
 return (
     <div>
         <Banner />
-        <div className="main-content">
+        <div className="amain-content">
             <div className="layout">
                 <Post posts={posts} />
-                <Contact/>
-        
             </div>
         </div>
+        <Contact/>
 
     </div>
 )

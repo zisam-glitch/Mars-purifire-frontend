@@ -6,8 +6,16 @@
 
     .blog-cards {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 45px;
+        padding: 40px;
+        @include md {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 0
+            
+            ;
+        }
 
         img {
             width: 100%;
@@ -51,12 +59,14 @@
 .main-dv {
     max-width: 100%;
     margin: 0;
-    background-color: #0202020c;
     .nws {
-        padding: 110px 0;
+        padding: 70px 0 10px 0;
+        @include md{
+            padding: 110px 0;
+        }
         h1{
         text-align: center;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
         font-size: 36px;
         font-weight: 500;
         line-height: 40px;

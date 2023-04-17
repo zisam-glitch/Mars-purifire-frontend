@@ -147,6 +147,38 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
+                <div className="icon-info-mob">
+                    <div className="left-1">
+                        <div className="card-icon">
+                            <img src={icon1} alt="" />
+                            <h1 className="header-icon">Ultra Portable</h1>
+                            <span className="desc-icon">Plug and play air purification. No need to knock down walls or use expensive mechanical ventilation such as HVAC.</span>
+                        </div>
+                    </div>
+
+                    <div className="center-2">
+                        <div className="card-icon">
+                            <img src={icon2} alt="" />
+                            <h1 className="header-icon">ISO:29463</h1>
+                            <span className="desc-icon">Air filters validated to ISO 29463 and flow rates to ISO 14644 with documentation to support.</span>
+                        </div>
+                    </div>
+                    <div className="center-3">
+                        <div className="card-icon">
+                            <img src={icon3} alt="" />
+                            <h1 className="header-icon">Low Maintenance Cost</h1>
+                            <span className="desc-icon">Our filters are easy to replace with minimal training. Filters only need replacing every 6 months when used in clinical practice.</span>
+                        </div>
+                    </div>
+
+                    <div className="right-4">
+                        <div className="card-icon">
+                            <img src={icon4} alt="" />
+                            <h1 className="header-icon">Quiet Operation</h1>
+                            <span className="desc-icon">Minimise disruption during patient care with quite operation with an average db level of less than 20db.</span>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section>
                 <div className="kills">
@@ -187,7 +219,7 @@ const Banner = () => {
                     </div>
                 </div>
             </section>
-           
+
             <section className="dext">
                 <TrustBy />
             </section>
@@ -208,7 +240,7 @@ const Banner = () => {
                 <div className="gal-img">
                     <img src={gal1} alt="" />
                     <img src={gal3} alt="" />
-                    <img src={gal2} alt="" />                    
+                    <img src={gal2} alt="" />
                 </div>
             </section>
         </>

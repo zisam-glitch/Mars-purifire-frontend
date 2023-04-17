@@ -1,19 +1,32 @@
+@import "../../css-config/mixins.scss";
 .hero-cst {
     margin: auto;
-    max-width: 85%;
+    max-width: 1100px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
     grid-gap: 20px;
     overflow: hidden;
     align-items: center;
-    height: 700px;
+    height: auto;
+    text-align: center;
+    @include md {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        text-align: start;
+        height: 700px;
+    }
 
     .text-part {
         h1 {
-            font-size: 65px;
-            line-height: 70px;
+            font-size: 35px;
+            line-height: 40px;
             color: #1b75bc;
             padding-bottom: 15px;
+            @include md {
+                font-size: 65px;
+            line-height: 70px;
+            }
+            
         }
 
         p {
@@ -34,7 +47,10 @@
             font-size: 14px;
             cursor: pointer;
             border-radius: 30px;
-            margin-top: 20px;
+            
+            @include md {
+                margin-top: 20px;
+            }
         }
 
         button:hover {
@@ -45,22 +61,45 @@
     .img-part {
         img {
             width: 100%;
+            display: none;
+            @include md {
+                display: grid;
+            }
+        }
+    }
+    .img-part-mobile{
+        img {
+            width: 100%;
+            padding: 40px 0 0 0;
+            @include md {
+                display: none;
+            }
         }
     }
 }
 
 .scend {
-    max-width: 85%;
+    max-width: 1100px;
     margin: auto;
     display: grid;
-    grid-template-columns: 25% 25% 50%;
+    grid-template-columns: 1fr;
     overflow: hidden;
     align-items: center;
     grid-gap: 20px;
+    padding: 60px 0;
+    @include md {
+        grid-template-columns: 25% 25% 50%;
+        grid-template-rows: 1fr;
+        text-align: start;
+    }
 
     .img-long {
         .ib1 {
             width: 100%;
+            display: none;
+            @include md {
+                display: grid;
+            }
         }
     }
 
@@ -70,6 +109,10 @@
         grid-gap: 20px;
         justify-content: center;
         align-items: center;
+        display: none;
+            @include md {
+                display: grid;
+            }
 
         img {
             width: 260px;
@@ -82,7 +125,10 @@
         max-width: 95%;
 
         .desc {
-            padding-left: 10px;
+            padding-left: 0px;
+            @include md {
+                padding-left: 10px;
+            }
 
             h4 {
                 font-size: 18px;
@@ -97,6 +143,7 @@
                 color: #000;
                 line-height: 50px;
                 padding-bottom: 15px;
+                padding: 0;
             }
 
             p {
@@ -109,8 +156,11 @@
         }
 
         .bullets {
-            display: grid;
+            display: none;
             grid-template-columns: 50% 50%;
+            @include md {
+                display: grid;
+            }
 
             .ab {
                 h5 {
@@ -124,14 +174,19 @@
 }
 
 .thed {
-    max-width: 85%;
+    max-width: 1100px;
     margin: auto;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr;
     align-items: center;
     overflow: hidden;
-    height: 800px;
+    height: 700px;
     grid-gap: 20px;
+    @include md {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        text-align: start;
+    }
 
     .txt {
         h2 {
@@ -157,7 +212,8 @@
     }
 }
 
-.product-s {
+.product-s5 {
+    
     h5 {
         margin: -20px auto;
         text-align: center;
@@ -168,11 +224,114 @@
         padding-bottom: 80px;
         max-width: 1000px;
         font-weight: 400;
+
+    }
+    h1{
+        text-align: center;
+        padding-bottom: 60px;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 40px;
+        padding-top: 90px;
+
+
+        @include md {
+            padding-bottom: 90px;
+        }
+    }
+    .all-products {
+        display: grid;
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        max-width: 1100px;
+        margin: 0 auto !important;
+        padding: 0;
+
+        @include md {
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 0;
+        }
+    }
+
+    .product {
+        box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+        overflow: hidden;
+        background: #fff;
+        color: #000;
+        width: 100%;
+        height: 650px;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    img {
+        width: 100%;
+        padding-bottom: 10px;
+        transition: all 0.3s ease;
+
+    }
+
+    img:hover {
+        scale: 1.1;
+    }
+
+    .product-info {
+        text-align: center;
+
+        .ctg {
+            font-size: 14px;
+            color: #00000094;
+            cursor: pointer;
+        }
+
+        .ctg:hover {
+            color: #154d77;
+        }
+
+        .product-title {
+            font-size: 22px;
+            padding: 15px;
+            width: 400;
+            cursor: pointer;
+        }
+
+        .product-title:hover {
+            color: #154d77;
+        }
+
+        .product-btn {
+            border: 0;
+            background-color: #1b75bc;
+            border: none;
+            color: white;
+            padding: 12px 42px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 30px;
+            margin: 20px 0 50px 0;
+        }
+
+        .product-btn:hover {
+            background-color: #154d77;
+        }
+
     }
 }
 
 .arccrdn {
+    ul{
+        padding: 0;
+    }
     .accord {
+        
         li {
             list-style: none;
             width: 100%;
@@ -222,13 +381,19 @@ input[ type="radio"]:checked+label:before {
 
 .ast {
     margin: auto;
-    max-width: 85%;
+    max-width: 1100px;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
     align-items: start;
-    padding-top: 210px;
-    padding-bottom: 110px;
+    padding-top: 90px;
+    @include md {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        text-align: start;
+        padding-bottom: 110px;
+        grid-gap: 20px;
+    }
 
     .cnts {
         h2 {
@@ -250,30 +415,40 @@ input[ type="radio"]:checked+label:before {
 }
 
 .sv {
-    background-color: #0202020c;
-    margin: 110px auto;
+    margin: 40px auto;
+    @include md {
+        margin: 110px auto;
+    }
 }
 
 .servis {
-    margin: 0 auto;
-    max-width: 85%;
-    padding: 110px 0;
+    margin: auto;
+    max-width: 1100px;
+    padding: 0;
     align-items: center;
     justify-content: center;
+    @include md {
+        margin: auto;
+    }
 
     h1 {
         text-align: center;
         padding-bottom: 70px;
         font-size: 36px;
         font-weight: 500;
+        line-height: 40px;
     }
 
     .svsr {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 40px;
         align-items: center;
         justify-content: center;
+        @include md {
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 0;
+        }
 
         .servis-crd {
             display: flex;
@@ -283,8 +458,14 @@ input[ type="radio"]:checked+label:before {
             background-color: #fff;
             width: 100%;
             border-radius: 10px;
-            height: 500px;
+            height: 600px;
             padding: 50px;
+            box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+            @include md {
+                height: 500px;
+            }
+            
+        
 
             h3 {
                 font-size: 22px;
@@ -321,4 +502,21 @@ input[ type="radio"]:checked+label:before {
 
     }
 
+}
+.mncrrrd{
+    padding: 0 40px;
+    @include md {
+        padding: 0;
+    }
+}
+.imgs-mbl{
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px 0; 
+    @include md {
+        display: none;
+    }
+    img{
+        width: 100%;
+    }
 }
