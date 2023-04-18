@@ -1,9 +1,30 @@
 import "./faq.scss"
+import Contact from "../FAQ/contact/contact";
+import { Helmet } from 'react-helmet';
 
 const FAQ = () => {
     return (
         <>
             <div className="mn-content">
+                <Helmet>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <link rel="profile" href="https://gmpg.org/xfn/11" />
+                    <title>FAQS - Mars Purifier In 2023</title>
+                    <meta name="description" content="FAQS- Most Frequent Questions Answered By Mars Purifiers. Have Any Questions? Fill out The Form And Ask Us." />
+                    <link rel="canonical" href="https://marspurifier.com/faqs-mars-purifier-in-2022/" />
+                    <meta property="og:locale" content="en_GB" />
+                    <meta property="og:type" content="article" />
+                    <meta property="og:title" content="FAQS - Mars Purifier In 2022" />
+                    <meta property="og:description" content="FAQS- Most Frequent Questions Answered By Mars Purifiers. Have Any Questions? Fill out The Form And Ask Us." />
+                    <meta property="og:url" content="https://marspurifier.com/faqs-mars-purifier-in-2022/" />
+                    <meta property="og:site_name" content="Dental Air Purification - Accredited" />
+                    <meta property="article:publisher" content="https://www.facebook.com/marspurifier.uk/" />
+                    <meta property="article:modified_time" content="2022-10-19T13:47:02+00:00" />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:label1" content="Estimated reading time" />
+                    <meta name="twitter:data1" content="4 minutes" />
+                </Helmet>
                 <div className="hero">
                     <h1>FAQ</h1>
                     <h2>Most frequent questions</h2>
@@ -72,8 +93,13 @@ const FAQ = () => {
                     <p>Indoor Air Quality (IAQ) refers to the air quality within and around buildings, especially as it relates to the health of the building's occupants. Removing common pollutants indoors can help reduce your risk of indoor health concerns. Particles that can impact Indoor Air Quality include common smoke, bacteria, tobacco smoke, pollen, pet dander, and dust. Particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and one-half microns or less in width. The Indoor Air Hygiene Institute requires a PM2.5 level of 12 μg/m3 or less, with infrequent or no spikes of 35 μg/m3 or higher.</p>
                     <h2>Have any questions?</h2>
                 </div>
+                <section className="cnttsz">
+                    <Contact />
+                </section>
             </div>
         </>
+
+
     );
 };
 export default FAQ;

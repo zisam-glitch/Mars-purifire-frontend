@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 const About = () => {
     return (
         <>
-            <div className="mn-content">
+            <div className="mn-content1">
                 <Helmet>
                     <meta charset="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />

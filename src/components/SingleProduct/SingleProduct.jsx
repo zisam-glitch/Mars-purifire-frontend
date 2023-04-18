@@ -4,8 +4,9 @@ import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import ReactMarkdown from 'react-markdown'
-import {FaCartPlus} from "react-icons/fa";
+import { FaCartPlus } from "react-icons/fa";
 import "./SingleProduct.scss";
+import { Helmet } from 'react-helmet';
 
 const SingleProduct = () => {
     const [quantity, setQuantity] = useState(1);
@@ -34,6 +35,11 @@ const SingleProduct = () => {
 
     return (
         <div className="single-product-main-content">
+            <Helmet>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <title>{product.title}</title>
+            </Helmet>
             <div className="layout">
                 <div className="single-product-page">
                     <div className="left">
