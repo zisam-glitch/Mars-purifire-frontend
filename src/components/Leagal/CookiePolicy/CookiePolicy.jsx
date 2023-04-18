@@ -1,5 +1,5 @@
 import "./CookiePolicy.scss"
-
+import { Helmet } from 'react-helmet';
 const CookiePolicy = () => {
     return (
         <>
@@ -39,7 +39,7 @@ const CookiePolicy = () => {
                                         <h5><b>More information</b></h5>
                                     </td>
                                 </tr>
-                                <tr valign="top">
+                              <tr valign="top">
                                     <td width={115}>
                                         <h5>[COOKIE TITLE]</h5>
                                         <h5>[COOKIE NAME]</h5>

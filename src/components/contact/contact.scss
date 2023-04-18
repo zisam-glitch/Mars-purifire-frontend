@@ -1,16 +1,26 @@
+@import "../../css-config/mixins.scss";
+
 .common-heading{ 
-    font-size: 50px !important;
+    font-size: 40px !important;
     text-transform: uppercase !important;
     letter-spacing: 3px !important;
-    line-height: 100px;
+    line-height: 60px;
     text-align: center;
+    padding: 60px 40px 20px 40px;
+    @include md {
+        padding: 80px 0 0 0;
+        font-size: 50px !important;
+    }
 }
 .texthed{
     font-size: 18px;
     line-height: 35px;
     letter-spacing: 2px;
-    padding-bottom: 60px;
+    padding: 0 40px 30px 40px;
     text-align: center;
+    @include md {
+        padding-bottom: 60px;
+    }
 }
 .container {
     align-items: center;
@@ -25,6 +35,7 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 45px  45px 1fr 45px;
             grid-gap: 15px;
+            
 
             input{
                 border: 0px;
@@ -75,10 +86,17 @@
 }
 .mns{
     margin: 100px auto 150px auto ;
-    max-width: 85%;
+    max-width: 1100px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr;
     align-items: center;
+    grid-gap: 30px;
+    padding: 40px;
+    @include md {
+        grid-template-columns: 50% 50%;
+        grid-gap: 0px;
+    }
+    
     .othr{
         align-items: center;
         h3{

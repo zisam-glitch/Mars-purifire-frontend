@@ -1,4 +1,5 @@
 import "./ModernSlaveryAct.scss"
+import { Helmet } from 'react-helmet';
 
 const ModernSlaveryAct = () => {
     return (

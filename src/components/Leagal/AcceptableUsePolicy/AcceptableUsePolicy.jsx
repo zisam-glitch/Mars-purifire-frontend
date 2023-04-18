@@ -1,4 +1,5 @@
 import "./AcceptableUsePolicy.scss"
+import { Helmet } from 'react-helmet';
 
 const PrivacyPolicy = () => {
     return (
@@ -155,7 +156,7 @@ const PrivacyPolicy = () => {
                         </li>
                         <li>
                             Advocate, promote, incite any party to commit, or assist any unlawful or criminal act such as (by way of example only) copyright infringement or computer misuse.
-                        </li>
+                      </li>
                         <li>
                             Contain a statement which you know or believe, or have reasonable grounds for believing, that members of the public to whom the statement is, or is to be, published are likely to understand as a direct or indirect encouragement or other inducements to the commission, preparation or instigation of acts of terrorism.
                         </li>

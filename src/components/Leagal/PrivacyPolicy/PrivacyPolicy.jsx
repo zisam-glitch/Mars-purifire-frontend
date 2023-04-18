@@ -1,9 +1,30 @@
 import "./PrivacyPolicy.scss"
-
+import { Helmet } from 'react-helmet';
 const PrivacyPolicy = () => {
     return (
         <>
             <div className="mn-content-ss">
+            <Helmet>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <link rel="profile" href="https://gmpg.org/xfn/11" />
+                    <title>About Mars Purifier. Who We Are</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <meta name="description" content="About Mars Purifier- UK Based ISO Certified Air Purification Company - Mars Purifiers. Read About Us, Who We Are, and Why We Are The Best." />
+                    <link rel="canonical" href="https://marspurifier.com/about-mars-purifier-who-we-are/" />
+                    <meta property="og:locale" content="en_GB" />
+                    <meta property="og:type" content="article" />
+                    <meta property="og:title" content="About Mars Purifier. Who We Are" />
+                    <meta property="og:description" content="About Mars Purifier- UK Based ISO Certified Air Purification Company - Mars Purifiers. Read About Us, Who We Are, and Why We Are The Best." />
+                    <meta property="og:url" content="https://marspurifier.com/about-mars-purifier-who-we-are/" />
+                    <meta property="og:site_name" content="Dental Air Purification - Accredited" />
+                    <meta property="article:publisher" content="https://www.facebook.com/marspurifier.uk/" />
+                    <meta property="article:modified_time" content="2022-10-14T04:10:56+00:00" />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:label1" content="Estimated reading time" />
+                    <meta name="twitter:data1" content="2 minutes" />
+                    <link rel="profile" href="https://gmpg.org/xfn/11"></link>
+                </Helmet>
                 <div className="hero-ss">
                     <h1>Privacy Policy</h1>
                     <h3>Introduction</h3>
