@@ -140,31 +140,31 @@ function App() {
                     <tr>
                       <th
                         scope="col"
-                        style={{ backgroundColor: "#6a78ed", color: "white" }}
+                        style={{ backgroundColor: "#1b75bc", color: "white" }}
                       >
                         <b>Name</b>
                       </th>
                       <th
                         scope="col"
-                        style={{ backgroundColor: "#6a78ed", color: "white" }}
+                        style={{ backgroundColor: "#1b75bc", color: "white" }}
                       >
                         <b>CADR(m3/h)</b>
                       </th>
                       <th
                         scope="col"
-                        style={{ backgroundColor: "#6a78ed", color: "white" }}
+                        style={{ backgroundColor: "#1b75bc", color: "white" }}
                       >
                         <b>Room Volume</b>
                       </th>
                       <th
                         scope="col"
-                        style={{ backgroundColor: "#6a78ed", color: "white" }}
+                        style={{ backgroundColor: "#1b75bc", color: "white" }}
                       >
                         <b>100% ACH</b>
                       </th>
                       <th
                         scope="col"
-                        style={{ backgroundColor: "#6a78ed", color: "white" }}
+                        style={{ backgroundColor: "#1b75bc", color: "white" }}
                       >
                         <b>50% ACH</b>
                       </th>

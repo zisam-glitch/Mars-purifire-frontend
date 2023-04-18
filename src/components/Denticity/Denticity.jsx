@@ -8,6 +8,9 @@ import Prod from "../../assets/products/gen-x.webp";
 import Icon1 from "../../assets/icon/contract-icon.svg"
 import Icon2 from "../../assets/icon/speak.svg"
 import Icon3 from "../../assets/icon/Filter.svg"
+import Calculate from "../../components/Calculate/Calculate"
+import Contact from "../Home/contact/contact";
+import { Helmet } from 'react-helmet';
 
 
 
@@ -16,6 +19,29 @@ const Denticity = () => {
     return (
         <>
             <div className="mncrrrd">
+                <Helmet>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <link rel="profile" href="https://gmpg.org/xfn/11" />
+                    <title>Dental Air Purifiers For Dental Clinics - Reduce Fallow Time</title>
+                    <meta name="description" content="Dental air purifiers for dental practices &amp; clinics. Mars helps reduce fallow time, capture airborne particles and destroy viruses." />
+                    <link rel="canonical" href="https://marspurifier.com/dental-air-purifiers-for-dental-clinics-reduce-fallow-time/" />
+                    <meta property="og:locale" content="en_GB" />
+                    <meta property="og:type" content="article" />
+                    <meta property="og:title" content="Dental Air Purifiers For Dental Clinics - Reduce Fallow Time" />
+                    <meta property="og:description" content="Dental air purifiers for dental practices &amp; clinics. Mars helps reduce fallow time, capture airborne particles and destroy viruses." />
+                    <meta property="og:url" content="https://marspurifier.com/dental-air-purifiers-for-dental-clinics-reduce-fallow-time/" />
+                    <meta property="og:site_name" content="Dental Air Purification - Accredited" />
+                    <meta property="article:publisher" content="https://www.facebook.com/marspurifier.uk/" />
+                    <meta property="article:modified_time" content="2022-10-19T15:58:44+00:00" />
+                    <meta property="og:image" content="https://marspurifier.com/wp-content/uploads/2021/07/portrait-of-smiling-female-dentist-in-dentist-s-office-1.jpg" />
+                    <meta property="og:image:width" content="2000" />
+                    <meta property="og:image:height" content="1335" />
+                    <meta property="og:image:type" content="image/jpeg" />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:label1" content="Estimated reading time" />
+                    <meta name="twitter:data1" content="9 minutes" />
+                </Helmet>
                 <div className="hero-cst">
                     <div className="text-part">
                         <div className="img-part-mobile" >
@@ -39,16 +65,16 @@ const Denticity = () => {
                     </div>
                     <div className="text-sec">
                         <div className="desc">
-                            
+
                             <h4>Mars Purifier</h4>
                             <h1>Air Purifiers That Help Dental Clinics Reduce Fallow Time.</h1>
                             <div className="imgs-mbl">
-                            <img className="ib1" src={img1} alt="" />
+                                <img className="ib1" src={img1} alt="" />
                             </div>
                             <p>Dental practices in the UK are under constant pressure to help contain the spread of viruses during routine dental work whilst also reducing fallow time to follow BDA guidance. Dentists, patients and staff need protection from airborne bacteria and viruses, Mercury and disinfectants and there is now heightened concern over the specific spread of Coronavirus (COVID-19). Mars Purifier have put together this summary to assist Dentists and other Health Professionals who may be in the process of choosing suitable air purifiers for their premises.</p>
                             <div className="imgs-mbl">
-                            <img className="ig1" src={img2} alt="" />
-                            <img className="ig2" src={img3} alt="" />
+                                <img className="ig1" src={img2} alt="" />
+                                <img className="ig2" src={img3} alt="" />
                             </div>
                         </div>
                         <div className="bullets">
@@ -75,45 +101,45 @@ const Denticity = () => {
                     </div>
                 </div>
                 <div className="prosssed">
-                <section className="product-s5">
-                    <h1>Dental Air Purifiers - Validated To ISO 14644</h1>
-                    <h5>The UK's Only Dental Air Purification Provider With External Validation For Air Delivery Rates, So No Need For The 50% Recommended Reduction Of Manufacturer CADR To Calculate Air Changes.</h5>
-                    <div className="all-products">
-                        <div className="product">
-                            <img src={Prod} alt="product " />
-                            <div className="product-info">
-                                <span className="ctg">category</span>
-                                <div className="product-title">
-                                    Gen X Domestic
+                    <section className="product-s5">
+                        <h1>Dental Air Purifiers - Validated To ISO 14644</h1>
+                        <h5>The UK's Only Dental Air Purification Provider With External Validation For Air Delivery Rates, So No Need For The 50% Recommended Reduction Of Manufacturer CADR To Calculate Air Changes.</h5>
+                        <div className="all-products">
+                            <div className="product">
+                                <img src={Prod} alt="product " />
+                                <div className="product-info">
+                                    <span className="ctg">category</span>
+                                    <div className="product-title">
+                                        Gen X Domestic
+                                    </div>
+                                    <p className="product-price">£300</p>
+                                    <button className="product-btn">Add to cart</button>
                                 </div>
-                                <p className="product-price">£300</p>
-                                <button className="product-btn">Add to cart</button>
+                            </div>
+                            <div className="product">
+                                <img src={Prod} alt="product " />
+                                <div className="product-info">
+                                    <span className="ctg">category</span>
+                                    <div className="product-title">
+                                        Gen X Domestic
+                                    </div>
+                                    <p className="product-price">£300</p>
+                                    <button className="product-btn">Add to cart</button>
+                                </div>
+                            </div>
+                            <div className="product">
+                                <img src={Prod} alt="product" />
+                                <div className="product-info">
+                                    <span className="ctg">category</span>
+                                    <div className="product-title">
+                                        Gen X Domestic
+                                    </div>
+                                    <p className="product-price">£300</p>
+                                    <button className="product-btn">Add to cart</button>
+                                </div>
                             </div>
                         </div>
-                        <div className="product">
-                            <img src={Prod} alt="product " />
-                            <div className="product-info">
-                                <span className="ctg">category</span>
-                                <div className="product-title">
-                                    Gen X Domestic
-                                </div>
-                                <p className="product-price">£300</p>
-                                <button className="product-btn">Add to cart</button>
-                            </div>
-                        </div>
-                        <div className="product">
-                            <img src={Prod} alt="product" />
-                            <div className="product-info">
-                                <span className="ctg">category</span>
-                                <div className="product-title">
-                                    Gen X Domestic
-                                </div>
-                                <p className="product-price">£300</p>
-                                <button className="product-btn">Add to cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
                 </div>
                 <section>
                     <div className="ast">
@@ -198,7 +224,13 @@ const Denticity = () => {
                 </section>
                 <section>
                 </section>
+                <section className="calx">
+                    <Calculate />
+                </section>
             </div >
+            <section className="cntts">
+                <Contact />
+            </section>
         </>
     );
 };
