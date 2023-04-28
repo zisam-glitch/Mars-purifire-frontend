@@ -5,6 +5,7 @@ import { FaLocationArrow, FaMobileAlt, } from "react-icons/fa";
 import { BsFillClockFill } from "react-icons/bs";
 import Payment from "../../assets/payments.png";
 import Logo from "../../assets/logo/mars-logo.png"
+import pot from "../../assets/imgss.jpg"
 import {
     FaFacebook,
     FaTwitter,
@@ -21,6 +22,10 @@ const Footer = () => {
                     <div className="text">
                         <img src={Logo} alt="" />
                         <p>THE specialist in air purification.</p>
+                        <div className="cradit">
+                            <span>website build by</span>
+                            <img src={pot} alt="" />
+                        </div>
                         <span className="social-icons">
                             <a href="https://www.facebook.com/marspurifier.uk/"><FaFacebook size={22} /></a>
                             <a href="https://twitter.com/MarsPurifier?s=09"><FaTwitter size={22} /></a>
