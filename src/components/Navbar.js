@@ -69,7 +69,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/about'
+                to='/about-mars-purifier-who-we-are'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -97,10 +97,17 @@ function Navbar() {
               >
                 Blog
               </Link>
+              <Link
+                to='/water-purifire'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Water Purifire
+              </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/faqs'
+                to='/faqs-mars-purifier-in-2023'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -118,7 +125,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/contact'
+                to='/contact-us-mars-purifier'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >

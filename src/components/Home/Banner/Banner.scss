@@ -200,6 +200,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 10px;
+        cursor: pointer;
     }
 
     img {
@@ -254,6 +255,17 @@
 
         .product-btn:hover {
             background-color: #154d77;
+        }
+
+        .product-price {
+            font-size: 17px !important;
+            display: block;
+            line-height: 35px;
+            letter-spacing: 1px;
+            color: #1b75bc;
+            font-weight: 600;
+            padding: 0;
+            cursor: pointer;
         }
 
     }
@@ -436,6 +448,7 @@
         margin: auto 40px;
         display: grid;
         grid-gap: 30px;
+
         @include md {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
@@ -491,6 +504,7 @@
 
 .gal {
     padding: 40px;
+
     @include md {
         max-width: 1100px;
         margin: 0 auto 110px auto;
@@ -514,6 +528,7 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         align-items: center;
+
         @include md {
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr 1fr;

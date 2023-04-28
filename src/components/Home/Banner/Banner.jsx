@@ -7,9 +7,10 @@ import TrustBy from "../../trust-by/trust-by"
 import TrustByMob from "../../trust-by/trust-by-mob"
 import BannerImg from "../../../assets/gen-x-y-z-mixed-no-bg.webp";
 import vds from "../../../assets/GenZ-compressed.mp4"
-import Prod from "../../../assets/products/gen-x.webp";
-
-import { AiFillCalendar } from "react-icons/ai";
+import Prodx from "../../../assets/products/gen-x.webp";
+import Prody from "../../../assets/products/gen-y.webp";
+import Prodz from "../../../assets/products/gen-z.webp";
+import { useNavigate } from "react-router-dom";
 import icon1 from "../../../assets/icon/svgexport-9.svg"
 import icon2 from "../../../assets/icon/svgexport-10.svg"
 import icon3 from "../../../assets/icon/svgexport-11.svg"
@@ -27,6 +28,7 @@ import gal2 from "../../../assets/category/1332.webp"
 import gal3 from "../../../assets/category/1333.webp"
 
 const Banner = () => {
+    const navigate = useNavigate();
     return (
         <>
             <div className="cont">
@@ -50,7 +52,7 @@ const Banner = () => {
                             <span className="desc">Buy with confidence when you choose a Mars Purifier Unit,<br /> designed for use in clinical and regulatory enviroments.</span>
                         </div>
                         <div className="shop-btn">
-                            <button className="shop-now">Shop now</button>
+                            <button className="shop-now" onClick={() => navigate("/shop")} >Shop now</button>
                         </div>
                     </div>
                     <div className="image-content">
@@ -61,37 +63,37 @@ const Banner = () => {
             <section className="product-s">
                 <h1>Featured Products</h1>
                 <div className="all-products">
-                    <div className="product">
-                        <img src={Prod} alt="product image" />
+                    <div className="product" onClick={() => navigate("/product/10" )}>
+                        <img src={Prodx} alt="product image" />
                         <div className="product-info">
-                            <span className="ctg">category</span>
+                            <span className="ctg">Industry</span>
                             <div className="product-title">
-                                Gen X Domestic
+                                Generation X
                             </div>
-                            <p className="product-price">£300</p>
-                            <button className="product-btn">Add to cart</button>
+                            <p className="product-price">£495.00</p>
+                            <button className="product-btn">View Product </button>
                         </div>
                     </div>
-                    <div className="product">
-                        <img src={Prod} alt="product image" />
+                    <div className="product" onClick={() => navigate("/product/30")} >
+                        <img src={Prody} alt="product image" />
                         <div className="product-info">
-                            <span className="ctg">category</span>
+                            <span className="ctg">Clinical</span>
                             <div className="product-title">
-                                Gen X Domestic
+                                Generation Y
                             </div>
-                            <p className="product-price">£300</p>
-                            <button className="product-btn">Add to cart</button>
+                            <p className="product-price">£695.00</p>
+                            <button className="product-btn">View Product</button>
                         </div>
                     </div>
-                    <div className="product">
-                        <img src={Prod} alt="product image" />
+                    <div className="product" onClick={() => navigate("/product/31")}>
+                        <img src={Prodz} alt="product image" />
                         <div className="product-info">
-                            <span className="ctg">category</span>
+                            <span className="ctg">Clinical, Industry</span>
                             <div className="product-title">
-                                Gen X Domestic
+                                Generation Z
                             </div>
-                            <p className="product-price">£300</p>
-                            <button className="product-btn">Add to cart</button>
+                            <p className="product-price">£1,195.00</p>
+                            <button className="product-btn">View Product</button>
                         </div>
                     </div>
                 </div>

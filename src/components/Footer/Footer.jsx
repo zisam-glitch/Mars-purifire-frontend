@@ -16,7 +16,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-content">
-                
+
                 <div className="col">
                     <div className="text">
                         <img src={Logo} alt="" />
@@ -49,11 +49,11 @@ const Footer = () => {
                 <div className="col">
                     <div className="title">QUICK LINKS</div>
                     <span className="text"><Link to='/' className='fav-links'> Home </Link></span>
-                    <span className="text"><Link to='/about' className='fav-links'> About </Link></span>
+                    <span className="text"><Link to='/about-mars-purifier-who-we-are' className='fav-links'> About </Link></span>
                     <span className="text"><Link to='/blog' className='fav-links'> Blog </Link></span>
-                    <span className="text"><Link to='/contact' className='fav-links'> Contact </Link></span>
-                    <span className="text"><Link to='/faqs' className='fav-links'> FAQ </Link></span>
-                    
+                    <span className="text"><Link to='/contact-us-mars-purifier' className='fav-links'> Contact </Link></span>
+                    <span className="text"><Link to='/faqs-mars-purifier-in-2023' className='fav-links'> FAQ </Link></span>
+
                 </div>
                 <div className="col">
                     <div className="title">LEGAL</div>
@@ -67,8 +67,7 @@ const Footer = () => {
             <div className="bottom-bar">
                 <div className="bottom-bar-content">
                     <span className="text">
-                        JSDEVSTORE 2022 CREATED BY JS DEV. PREMIUM E-COMMERCE
-                        SOLUTIONS.
+                        Copyright ©2023 Mars Purifier Industries. All Rights Reserved.
                     </span>
                     <img src={Payment} />
                 </div>

@@ -23,6 +23,7 @@ import AcceptableUsePolicy from "./components/Leagal/AcceptableUsePolicy/Accepta
 import TermsAndCondition from "./components/Leagal/Terms&Condition/Terms&Condition"
 import CookiePolicy from "./components/Leagal/CookiePolicy/CookiePolicy"
 import ModernSlaveryAct from "./components/Leagal/ModernSlaveryAct/ModernSlaveryAct"
+import WaterPurifire from "./components/Water-purifire/Water-purifire";
 
 
 
@@ -35,16 +36,16 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/product/:id" element={<SingleProduct />} />
                     <Route path="/post/:id" element={<SinglePost />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/faqs" element={<FAQ />} />
-                    <Route path="/denticity" element={<Denticity />} />
-                    <Route path="/education" element={<Education />} />
-                    <Route path="/health-care" element={<HealthCare />} />
-                    <Route path="/business" element={<Business />} />
-                    <Route path="/hospitality" element={<Hospitality />} />
-                    <Route path="/gym-and-fitness-studio" element={<GymAndFitnessStudio />} />
+                    <Route path="/about-mars-purifier-who-we-are" element={<About />} />
+                    <Route path="/faqs-mars-purifier-in-2023" element={<FAQ />} />
+                    <Route path="/dental-air-purifiers-for-dental-clinics-reduce-fallow-time" element={<Denticity />} />
+                    <Route path="/air-purifiers-for-schools" element={<Education />} />
+                    <Route path="/clinical-air-purifiers-hospital-air-purifier-by-mars-purifier" element={<HealthCare />} />
+                    <Route path="/commercial-air-purifier-commercial-air-purification-by-mars-purifier" element={<Business />} />
+                    <Route path="/mars-airpurifier-hospitality" element={<Hospitality />} />
+                    <Route path="/air-purifiers-for-gyms-and-fitness-studios-mars-purifier" element={<GymAndFitnessStudio />} />
                     <Route path="/shop" element={<Shop />} />
-                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/contact-us-mars-purifier" element={<Contact />} />
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/calculate" element={<Calculate />} />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -52,6 +53,7 @@ function App() {
                     <Route path="/terms-and-condition" element={<TermsAndCondition />} />
                     <Route path="/cookie-policy" element={<CookiePolicy />} />
                     <Route path="/modern-slavery-act" element={<ModernSlaveryAct />} />
+                    <Route path="/water-purifire" element={<WaterPurifire />} />
                     
                 </Routes>
                 <Footer />

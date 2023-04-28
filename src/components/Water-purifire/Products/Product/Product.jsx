@@ -5,12 +5,12 @@ import "./Product.scss";
 const Product = ({ data, id }) => {
     const navigate = useNavigate();
     return (
-        <div className="pros">
+        <div className="pros1">
             <div
                 className="product-card"
                 onClick={() => navigate("/product/" + id)}
             >
-                <div className="thumbnail">
+                <div className="thumbnail1">
                     <img
                         src={
                             process.env.REACT_APP_DEV_URL +
@@ -18,11 +18,9 @@ const Product = ({ data, id }) => {
                         }
                     />
                 </div>
-                <div className="prod-details">
-                    <span className="category">{data.Category}</span>
+                <div className="prod-details1">
                     <span className="name">{data.title}</span>
                     <span className="price">£{data.price}</span>
-                    <button className="product-btn" onClick={() => navigate("/product/" + id)}>View Product</button>
                 </div>
             </div>
         </div>

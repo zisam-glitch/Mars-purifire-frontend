@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import "./shop.scss";
-import Products from "../Products/Products";
+import { useParams } from "react-router-dom";
+import Air from "./air"
 import { fetchDataFromApi } from "../../utils/api";
 import { Context } from "../../utils/context";
 import { Helmet } from 'react-helmet';
@@ -27,6 +28,7 @@ const Shop = () => {
             setProducts(res);
         });
     };
+    const { id } = useParams();
 
     return (
         <div>
@@ -49,10 +51,10 @@ const Shop = () => {
                     <meta name="twitter:card" content="summary_large_image" />
                 </Helmet>
                 <div className="layout">
-                    <Products
-                        headingText="Shop"
-                        products={products}
-                    />
+                <Air
+                    productId={id}
+                    categoryId={1}
+                   />
 
                 </div>
             </div>
