@@ -22,10 +22,10 @@ const Footer = () => {
                     <div className="text">
                         <img src={Logo} alt="" />
                         <p>THE specialist in air purification.</p>
-                        <div className="cradit">
-                            <a href="https://instagram.com/grow_with_sayed?igshid=YmMyMTA2M2Y=">
-                            <span>website build by</span>
-                            <img src={pot} alt="" /></a>
+                        <div className="cradit">                         
+                            <a href="https://instagram.com/grow_with_sayed?igshid=YmMyMTA2M2Y=">Website Build By</a>
+                            <a href="https://instagram.com/grow_with_sayed?igshid=YmMyMTA2M2Y="><img src={pot} alt="" /></a>
+                            
                         </div>
                         <span className="social-icons">
                             <a href="https://www.facebook.com/marspurifier.uk/"><FaFacebook size={22} /></a>
