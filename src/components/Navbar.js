@@ -97,7 +97,9 @@ function Navbar() {
               >
                 Blog
               </Link>
-              <Link
+            </li>
+            <li className='nav-item'>
+            <Link
                 to='/water-purifire'
                 className='nav-links'
                 onClick={closeMobileMenu}
