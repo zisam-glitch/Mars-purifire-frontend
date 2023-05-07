@@ -1,0 +1,11 @@
+@import "../../css-config/mixins.scss";
+.amain-content {
+    background-color: #0202020c;
+    .layout {
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+        @include md {
+            max-width: 100%;
+        }
+    }
+}

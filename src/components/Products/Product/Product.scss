@@ -1,0 +1,109 @@
+@import "../../../css-config/mixins.scss";
+
+.pros {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    cursor: pointer;
+    width: calc(100% - 5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 90px 0;
+    border-radius: 10px;
+
+    @include md {
+        width: calc(32% - 25px);
+    }
+    
+
+    .thumbnail {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        @include md {
+            height: 350px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .prod-details {
+        display: grid;
+        justify-content: center;
+        padding: 0 40px;
+    }
+
+    .category {
+        font-size: 14px;
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
+        padding: 15px 0 0 0;
+        color: rgba(0, 0, 0, 0.5803921569);
+
+        @include md {
+            font-size: 15px;
+
+        }
+    }
+
+    .name {
+
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
+        padding: 15px 0;
+
+        @include md {
+            font-size: 22px;
+        }
+    }
+
+    .price {
+        font-size: 18px;
+        display: block;
+        text-align: center;
+        line-height: 35px;
+        letter-spacing: 1px;
+        color: #1b75bc;
+        font-weight: 600;
+
+        @include md {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    .product-btn {
+        margin: 0 40px;
+        display: flex;
+        border: 0;
+        background-color: #1b75bc;
+        border: none;
+        color: white;
+        padding: 12px 42px;
+        text-align: center;
+        text-decoration: none;
+        justify-content: center;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 30px;
+        margin-top: 25px;
+    }
+
+    .product-btn:hover {
+        background-color: #154d77;
+    }
+}
+.pros:hover{
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 4px 12px;
+}
+
