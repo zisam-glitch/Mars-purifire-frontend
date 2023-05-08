@@ -114,9 +114,7 @@ const SingleProduct = () => {
                             <div
                                 className={toggleState === 1 ? "content  active-content" : "content"}
                             >
-                                <ReactMarkdown>
-                                    {product.mainDesc}
-                                </ReactMarkdown>
+                                    {product.m}
                             </div>
 
                             <div
