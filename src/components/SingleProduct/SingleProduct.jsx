@@ -7,6 +7,8 @@ import ReactMarkdown from 'react-markdown'
 import { FaCartPlus } from "react-icons/fa";
 import "./SingleProduct.scss";
 import { Helmet } from 'react-helmet';
+import ckeditor5Dll from "ckeditor5/build/ckeditor5-dll.js";
+import ckeditor5MrkdownDll from "@ckeditor/ckeditor5-markdown-gfm/build/markdown-gfm.js";
 
 const SingleProduct = () => {
     const [quantity, setQuantity] = useState(1);
@@ -128,9 +130,9 @@ const SingleProduct = () => {
                             <div
                                 className={toggleState === 3 ? "content  active-content" : "content"}
                             >
-                                <ReactMarkdown>
-                                    {product.support}
-                                </ReactMarkdown>
+                                
+                                    {product.jsom}
+                               
                             </div>
                         </div>
                     </div>
