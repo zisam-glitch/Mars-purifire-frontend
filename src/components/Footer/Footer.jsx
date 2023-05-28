@@ -23,7 +23,7 @@ const Footer = () => {
                         <img src={Logo} alt="" />
                         <p>THE specialist in air purification.</p>
                         <div className="cradit">                         
-                            <a href="https://instagram.com/grow_with_sayed?igshid=YmMyMTA2M2Y=">Website Build By</a>
+                            <a href="https://instagram.com/grow_with_sayed?igshid=YmMyMTA2M2Y=">Website Built By</a>
                             <a href="https://instagram.com/grow_with_sayed?igshid=YmMyMTA2M2Y="><img src={pot} alt="" /></a>
                             
                         </div>
