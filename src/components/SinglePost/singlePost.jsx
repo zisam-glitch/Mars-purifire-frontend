@@ -6,14 +6,14 @@ import { Helmet } from 'react-helmet';
 
 const SinglePost = () => {
 
-    const { id } = useParams();
-    const { data } = useFetch(`/api/posts?populate=*&[filters][id]=${id}`);
+    const { slug } = useParams();
+    const { data } = useFetch(`/api/posts?populate=*&[filters][slug]=${slug}`);
 
 
 
 
     if (!data) return;
-    const post = data?.data[0].attributes
+    const post = data?.data[0]?.attributes
 
     return (
         <>
@@ -26,7 +26,7 @@ const SinglePost = () => {
                 <div className="titl-sg">{post.title}</div>
                 <div className="img">
                     <img src={process.env.REACT_APP_DEV_URL +
-                        post.img.data.attributes.url} alt="" />
+                        post.image.data.attributes.url} alt="" />
                 </div >
                 <div className="infx">
                     <span className="author">By: {post.author}</span>
@@ -34,7 +34,7 @@ const SinglePost = () => {
                     <span className="date">On: {post.date}</span>
                 </div>
                 <ReactMarkdown>
-                    {post.desc}
+                    {post.description}
                 </ReactMarkdown>
                 <div className="trd">{post.descx}</div>
             </div>

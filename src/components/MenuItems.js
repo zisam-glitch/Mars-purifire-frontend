@@ -1,6 +1,6 @@
 export const MenuItems = [
   {
-    title: 'Dentisity',
+    title: 'Dentistry',
     path: '/dental-air-purifiers-for-dental-clinics-reduce-fallow-time',
     cName: 'dropdown-link'
   },

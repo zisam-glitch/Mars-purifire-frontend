@@ -90,21 +90,21 @@ function Navbar() {
               {dropdown && <Dropdown />}
             </li>
             <li className='nav-item'>
-              <Link
-                to='/blog'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Blog
-              </Link>
-            </li>
-            <li className='nav-item'>
             <Link
                 to='/water-purifire'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Water purifier
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/blog'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Blog
               </Link>
             </li>
             <li className='nav-item'>

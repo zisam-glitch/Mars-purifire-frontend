@@ -34,8 +34,8 @@ function App() {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/product/:id" element={<SingleProduct />} />
-                    <Route path="/post/:id" element={<SinglePost />} />
+                    <Route path="/product/:slug" element={<SingleProduct />} />
+                    <Route path="/post/:slug" element={<SinglePost />} />
                     <Route path="/about-mars-purifier-who-we-are" element={<About />} />
                     <Route path="/faqs-mars-purifier-in-2023" element={<FAQ />} />
                     <Route path="/dental-air-purifiers-for-dental-clinics-reduce-fallow-time" element={<Denticity />} />

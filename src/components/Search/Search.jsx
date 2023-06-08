@@ -47,7 +47,7 @@ const Search = ({ setSearchModal }) => {
                             className="search-result-item"
                             key={item.id}
                             onClick={() => {
-                                navigate("/product/" + item.id);
+                                navigate(`/product/${item.attributes.slug}`);
                                 setSearchModal(false);
                             }}
                         >

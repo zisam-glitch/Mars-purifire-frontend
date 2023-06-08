@@ -88,8 +88,8 @@ const Business = () => {
                     </div>
                 </div>
                 <section className="product-s5">
-                    <h1>Dental Air Purifiers - Validated To ISO 14644</h1>
-                    <h5>The UK's Only Dental Air Purification Provider With External Validation For Air Delivery Rates, So No Need For The 50% Recommended Reduction Of Manufacturer CADR To Calculate Air Changes.</h5>
+                    <h1>Air Purifiers - Validated To ISO 14644</h1>
+                    <h5>The UK's Only Air Purification Provider With External Validation For Air Delivery Rates, So No Need For The 50% Recommended Reduction Of Manufacturer CADR To Calculate Air Changes.</h5>
                     <div className="all-products">
                         <div className="product" onClick={() => navigate("/product/10")}>
                             <img src={Prodx} alt="product image" />

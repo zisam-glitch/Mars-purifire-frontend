@@ -64,7 +64,7 @@ const Contact = () => {
                 className="inputs"
                 type="text"
                 name="username"
-                placeholder="Username"
+                placeholder="Name"
                 autoComplete="off"
                 required
               />

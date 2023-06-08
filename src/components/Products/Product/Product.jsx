@@ -6,9 +6,10 @@ const Product = ({ data, id }) => {
     const navigate = useNavigate();
     return (
         <div className="pros">
-            <div
+            <div 
                 className="product-card"
-                onClick={() => navigate("/product/" + id)}
+                onClick={() => navigate(`/product/${data.slug}`)}
+                
             >
                 <div className="thumbnail">
                     <img
@@ -19,11 +20,13 @@ const Product = ({ data, id }) => {
                     />
                 </div>
                 <div className="prod-details">
-                    <span className="category">{data.Category}</span>
+                
                     <span className="name">{data.title}</span>
                     <span className="price">£{data.price}</span>
-                    <button className="product-btn" onClick={() => navigate("/product/" + id)}>View Product</button>
+                    
+                   
                 </div>
+                <button className="product-btn" onClick={() => navigate(`/product/${data.slug}`)}>View Product</button>
             </div>
         </div>
     );

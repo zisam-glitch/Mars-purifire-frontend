@@ -16,14 +16,14 @@ const Post = ( {posts, id } ) => {
                     id={item.id}
                     data={item.attributes}
                 >
-                    <img onClick={() => navigate(`/post/${item.id}`)}
+                    <img onClick={() => navigate(`/post/${item.attributes.slug}`)}
                         src={
                             process.env.REACT_APP_DEV_URL +
-                            item.attributes.img.data.attributes.url
+                            item.attributes.image.data.attributes.url
                         }
                     />
-                    <h4 className="title-blg" onClick={() => navigate(`/post/${item.id}`)} >{item.attributes.title}</h4>
-                    <p onClick={() => navigate(`/post/${item.id}`)} >{item.attributes.stDes}</p>
+                    <h4 className="title-blg" onClick={() => navigate(`/post/${item.attributes.slug}`)} >{item.attributes.title}</h4>
+                    <p onClick={() => navigate(`/post/${item.attributes.slug}`)} >{item.attributes.stDes}</p>
 
                 </div>
             ))}
