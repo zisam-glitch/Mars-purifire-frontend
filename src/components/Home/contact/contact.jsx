@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <div className="mccc">
             <h1>Get In Touch</h1>
-            <p>Chat With Our Specialists For Product Information</p>
+            <p>Chat With Our Specialists For Product Information </p>
         <div className="mncc">
             <div className="container">
                 <div className="contact-form">
