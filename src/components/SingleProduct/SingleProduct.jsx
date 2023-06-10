@@ -114,9 +114,11 @@ const SingleProduct = () => {
                   toggleState === 1 ? "content  active-content" : "content"
                 }
               >
+                <div className="descp">
                <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]}>
                     {product.description}
                 </ReactMarkdown>
+                </div>
               </div>
 
               <div
@@ -124,9 +126,11 @@ const SingleProduct = () => {
                   toggleState === 2 ? "content  active-content" : "content"
                 }
               >
+                <div className="spec">
                 <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]}>
                   {product.specification}
                 </ReactMarkdown>
+                </div>
               </div>
               <div
                 className={

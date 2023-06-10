@@ -3,7 +3,10 @@
 .products{
     display: grid;
     gap: 35px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    @include md {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 .pros {
     cursor: pointer;
@@ -15,9 +18,11 @@
     .thumbnail{
         background-color: #00000004;
         margin-bottom: 7px;
+        text-align: center;
         img{
             width: 248.75px;
             height: 248.75px;
+
         }
     }
     .prod-details{

@@ -19,6 +19,7 @@
             display: flex;
             flex-direction: column;
             gap: 50px;
+
             @include md {
                 flex-direction: row;
             }
@@ -46,11 +47,13 @@
                 @include md {
                     justify-content: start;
                 }
-                li{
+
+                li {
                     list-style-type: none;
-                    font-size: 18px;
-                    letter-spacing: .6px;
-                    padding: 4px;
+                    font-size: 17px;
+                    letter-spacing: .3px;
+                    padding: 4px 0;
+                    color: #000000b0;
                 }
 
                 .name {
@@ -277,14 +280,71 @@ button {
 .table-mn {
     width: 100%;
 }
-.table-mntr{
+
+.table-mntr {
     text-align: start;
 }
-.td{
+
+.td {
     padding: 7px;
 }
-.right{
-    li{
+
+.right {
+    li {
         list-style-type: none;
     }
+    ul{
+        padding: 0;
+    }
+}
+
+.descp {
+    p {
+        font-size: 20px;
+        letter-spacing: .1px;
+        padding-bottom: 20px;
+        color: #000000b0;
+    }
+    ul{
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+}
+
+.spec {
+    h3 {
+        font-size: 30px;
+        letter-spacing: .5px;
+        color: #000000b0;
+    }
+    p{
+        padding-top: 40px;
+        padding-bottom: 5px;
+        letter-spacing: 0.5px;
+        color: #000000b0;
+    }
+    table{
+        width: 100%;
+        thead{
+            tr{
+                th{
+                    padding: 12px !important;
+                    text-align: start;
+                    color: #000000b0;
+                    font-size: 18px;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    padding: 12px !important;
+                    text-align: start;
+                    color: #000000b0;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    
 }
