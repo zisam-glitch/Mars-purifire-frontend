@@ -13,7 +13,6 @@
 
     .text-page-shop {
         padding: 40px;
-        text-align: center;
         @include md {
             padding: 70px;
         }
@@ -23,6 +22,10 @@
             line-height: 45px;
             font-weight: 500;
             padding-bottom: 20px;
+            text-align: center;
+            @include md {
+            text-align: start;
+        }
         }
 
         button {
