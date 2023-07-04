@@ -63,7 +63,7 @@ const Banner = () => {
             <section className="product-s">
                 <h1>Featured Products</h1>
                 <div className="all-products">
-                    <div className="product" onClick={() => navigate("/product/10" )}>
+                    <div className="product" onClick={() => navigate("/product/generation-x" )}>
                         <img src={Prodx} alt="product image" />
                         <div className="product-info">
                             <span className="ctg">Industry</span>
@@ -74,7 +74,7 @@ const Banner = () => {
                             <button className="product-btn">View Product </button>
                         </div>
                     </div>
-                    <div className="product" onClick={() => navigate("/product/30")} >
+                    <div className="product" onClick={() => navigate("/product/generation-y")} >
                         <img src={Prody} alt="product image" />
                         <div className="product-info">
                             <span className="ctg">Clinical</span>
@@ -85,7 +85,7 @@ const Banner = () => {
                             <button className="product-btn">View Product</button>
                         </div>
                     </div>
-                    <div className="product" onClick={() => navigate("/product/31")}>
+                    <div className="product" onClick={() => navigate("/product/generation-z")}>
                         <img src={Prodz} alt="product image" />
                         <div className="product-info">
                             <span className="ctg">Clinical, Industry</span>
