@@ -91,7 +91,7 @@ const Hospitality = () => {
                     <h1>Air Purifiers - Validated To ISO 14644</h1>
                     <h5>The UK's Only Air Purification Provider With External Validation For Air Delivery Rates, So No Need For The 50% Recommended Reduction Of Manufacturer CADR To Calculate Air Changes.</h5>
                     <div className="all-products">
-                        <div className="product" onClick={() => navigate("/product/10")}>
+                        <div className="product" onClick={() => navigate("/product/generation-x")}>
                             <img src={Prodx} alt="product image" />
                             <div className="product-info">
                                 <span className="ctg">Industry</span>
@@ -102,7 +102,7 @@ const Hospitality = () => {
                                 <button className="product-btn">View Product </button>
                             </div>
                         </div>
-                        <div className="product" onClick={() => navigate("/product/30")} >
+                        <div className="product" onClick={() => navigate("/product/generation-y")} >
                             <img src={Prody} alt="product image" />
                             <div className="product-info">
                                 <span className="ctg">Clinical</span>
@@ -113,7 +113,7 @@ const Hospitality = () => {
                                 <button className="product-btn">View Product</button>
                             </div>
                         </div>
-                        <div className="product" onClick={() => navigate("/product/31")}>
+                        <div className="product" onClick={() => navigate("/product/generation-z")}>
                             <img src={Prodz} alt="product image" />
                             <div className="product-info">
                                 <span className="ctg">Clinical, Industry</span>
