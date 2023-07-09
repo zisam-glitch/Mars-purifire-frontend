@@ -1,161 +1,128 @@
 import "./Water-purifire.scss";
-import { useEffect, useContext, useState } from "react";
-import { useParams } from "react-router-dom";
-import Togle from "./toggle"
-import Togle1 from "./toggle1"
-import Togle2 from "./toggle2"
-import Gift from "./gift"
-import Filters from "./Filters"
-import Accessories from "./Accessories"
-import prod1 from "../../assets/products/Blue.webp"
-import prod2 from "../../assets/products/white.webp"
-import Products from "./Products/Products";
-import { fetchDataFromApi } from "../../utils/api";
-import { Context } from "../../utils/context";
-import { Helmet } from 'react-helmet';
+import BanerImg from "../../assets/w-baner.png";
+import Left from "../../assets/category/left.jpg";
+import Right from "../../assets/category/right.jpg";
+import Img1 from "../../assets/category/img1.png";
+import Img2 from "../../assets/category/img2.png";
 
-const WaterPurifire = () => {
-    const { products, setProducts, categories, setCategories } =
-        useContext(Context);
-
-    useEffect(() => {
-        getCategories();
-        getProducts();
-    }, []);
-
-    const getCategories = () => {
-        fetchDataFromApi("/api/categories?populate=*").then((res) => {
-            console.log(res);
-            setCategories(res);
-        });
-    };
-
-    const getProducts = () => {
-        fetchDataFromApi("/api/products?populate=*").then((res) => {
-            console.log(res);
-            setProducts(res);
-        });
-    };
-    const [toggleState, setToggleState] = useState(1);
-    const toggleTab = (index) => {
-        setToggleState(index);
-    };
-    const { id } = useParams();
-    
-    return (
-        <>
-            <div className="main-water">
-            <Helmet>
-                    <meta charset="UTF-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <title>Mars Water Purifiers System</title>
-                </Helmet>
-                <section className="water-heading">
-                    <div className="main-water-heading">
-                        <h1>Gift with purchase!</h1>
-                        <p>Get a complimentary Travel Sleeve ($18 value) with your PureVis™ or Filtered bottle purchase!</p>
-                    </div>
-                </section>
-                <section className="gal-water">
-                    <div className="water-gal">
-                        <div className="sec-1">
-                            <h1>Filter. Purify. Track. Drink brilliantly!</h1>
-                            <p>A smart water filtration + purification system.</p>
-                            <button>Shop Now</button>
-                        </div>
-                    </div>
-                    <div className="water-gal">
-                        <div className="sec-2">
-                            <h1>LARQ Pitcher PureVis</h1>
-                            <p>Starting at $139 <del>$168</del></p>
-                            <div className="descprtr">
-                                <div className="containerx">
-                                    <div
-                                        className={toggleState === 1 ? "content1  active-content1" : "content1"}
-                                    >
-                                        <img src={prod1} alt="" />
-                                        <h5>Monaco Blue</h5>
-                                    </div>
-
-                                    <div
-                                        className={toggleState === 2 ? "content1  active-content1" : "content1"}
-                                    >
-                                        <img src={prod2} alt="" />
-                                        <h5>Pure White</h5>
-                                    </div>
-
-                                </div>
-                                <div className="tabz" >
-                                    <div
-                                        className={toggleState === 1 ? "tabs1 active-tabs1" : "tabs1"}
-                                        onClick={() => toggleTab(1)}
-                                    >
-                                        <img src={prod1} alt="" />
-                                    </div>
-                                    <div
-                                        className={toggleState === 2 ? "tabs1 active-tabs1" : "tabs1"}
-                                        onClick={() => toggleTab(2)}
-                                    >
-                                        <img src={prod2} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <span>The LARQ Pitcher uses a unique 2-step process to improve the quality of your water using PureVis™ and Nano Zero filter technology–giving you fresh-tasting water sip after sip.</span>
-                        </div>
-                    </div>
-                    <div className="water-gal">
-                        <Togle />
-                    </div>
-                    <div className="water-gal">
-                        <div className="sec-4">
-                            <h1>Brilliance in a bottle</h1>
-                            <p>60 seconds to cleaner water with PureVis.</p>
-                            <button>Shop Now</button>
-                        </div>
-                    </div>
-                    <div className="water-gal">
-                        <div className="sec-5">
-                            <h1>All-new LARQ Bottle Filtered</h1>
-                            <p>Take hydration into your own hands.</p>
-                            <button>Shop Now</button>
-                        </div>
-                    </div>
-                    <div className="water-gal"> 
-                        <Togle1 />
-                    </div>
-                    <div className="water-gal">
-                        <Togle2 />
-                    </div>
-                    <div className="water-gal">
-                        <div className="sec-8">
-                            <h1>LARQ Insulated Bottle</h1>
-                            <p>Double-wall insulated stainless steel keeps cool for up to 24 hours or hot for 12.</p>
-                            <h4>The LARQ Insulated Bottle does not feature our built-in PureVis™ or Nano Zero technology.</h4>
-                            <button>Shop Now</button>
-                        </div>
-                    </div>
-                </section>
-                <section className="prodsssz">
-                    <Gift
-                    productId={id}
-                    headingText="Gift Sets"
-                    categoryId={1}
-                   />
-                   <Filters
-                    productId={id}
-                    headingText="Gift Sets"
-                    categoryId={1}
-                   />
-                   
-                   <Accessories
-                    productId={id}
-                    headingText="Accessories"
-                    categoryId={1}
-                   />
-                </section>
+const WaterPurifier = () => {
+  return (
+    <div className="wContainer">
+      <div className="wBaner">
+        <div className="wChild1">
+          <h3>THE EASIEST WAY TO GET FILTERED WATER!</h3>
+          <h1>The Easiest Way to Get Filtered Water!</h1>
+          <p>
+            That’s 16 generations. 99% of plastic causes climate change. How do
+            we create a future in which both people and nature can thrive.
+          </p>
+          <button>BUY NOW</button>
+        </div>
+        <div className="wChild2">
+          <img src={BanerImg} alt="" />
+        </div>
+      </div>
+      <div className="wBaner">
+        <div className="wChild3">
+          <h3>WELCOME TO ACHILLES WATER!</h3>
+          <h1>Add A Purpose To Your Drinking Habits</h1>
+          <p>
+            Achilles bottle is all set to break the market of water bottles.
+            <br />
+            <br />
+            Protect yourself from bacteria and water-based impurities by getting
+            yourself an Achilles Bottle.
+            <br />
+            <br />
+            Replaces 500,000 Water Bottles – Reduces plastic waste and needless
+            spend of bottled water. BPA and Plastic free – enjoy fresh water
+            without replacement filters and with chemical free purification.
+            <br />
+            <br />
+            Self Cleaning Bottle – Stops bacteria and mold from breeding in your
+            water bottle.
+          </p>
+          <button>BUY NOW</button>
+        </div>
+        <div className="wChild4">
+          <img src={Left} alt="" />
+        </div>
+      </div>
+      <div className="wBaner1">
+        <div className="wChild">
+          <h1>Trending now</h1>
+        </div>
+        <div className="listproddst">
+          <div className="product-rcard">
+            <img src={Img1} alt="" />
+            <div className="dtls">
+              <li>UV water bottle</li>
+              <h5>Achilles Water Bottle White</h5>
+              <h6>£49.99</h6>
             </div>
-        </>
-    );
+          </div>
+          <div className="product-rcard">
+            <img src={Img2} alt="" />
+            <div className="dtls">
+              <li>UV water bottle</li>
+              <h5>Achilles Water Bottle Black</h5>
+              <h6>£49.99</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="wBaner">
+        <div className="wChild7">
+          <h3>BETTER FILTRATION</h3>
+          <h1>The Achilles Bottle</h1>
+          <li>
+            Powered by deep UVC – effectively eliminate 99.99% of mold, bacteria
+            and viruses from water, with nothing but UV light exposure.
+          </li>
+          <li>Ultra lightweight and insulated stainless steel.</li>
+          <li>Pure water in 60 seconds.</li>
+          <li>
+            Most bacteria neutralised, including the infamous E.coli, using
+            advanced technological cleaning systems.
+          </li>
+          <li>Long lasting power and splash proof</li>
+          <li>
+            The bottle activates the cleaning system every 2 hours to ensure
+            that the bottle and the water inside are free of any odour.
+          </li>
+        </div>
+        <div className="wChild8">
+          <img src={Right} alt="" />
+        </div>
+      </div>
+      <div className="wBaner">
+        <div className="wChild9">
+          <img src={Left} alt="" />
+        </div>
+        <div className="wChild3">
+          <h3>WELCOME TO ACHILLES WATER!</h3>
+          <h1>Add A Purpose To Your Drinking Habits</h1>
+          <p>
+            Achilles bottle is all set to break the market of water bottles.
+            <br />
+            <br />
+            Protect yourself from bacteria and water-based impurities by getting
+            yourself an Achilles Bottle.
+            <br />
+            <br />
+            Replaces 500,000 Water Bottles – Reduces plastic waste and needless
+            spend of bottled water. BPA and Plastic free – enjoy fresh water
+            without replacement filters and with chemical free purification.
+            <br />
+            <br />
+            Self Cleaning Bottle – Stops bacteria and mold from breeding in your
+            water bottle.
+          </p>
+          <button>BUY NOW</button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default WaterPurifire;
+export default WaterPurifier;

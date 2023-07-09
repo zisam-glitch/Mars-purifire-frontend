@@ -1,366 +1,194 @@
 @import "../../css-config/mixins.scss";
 
-.main-water {
+.wContainer {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  .wBaner {
     max-width: 1100px;
+    height: 700px;
     margin: auto;
-    padding: 40px;
-    @include md {
-        padding: 0px;
-    }
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-between;
+    .wChild1 {
+      h3 {
+        letter-spacing: 1px;
+        font-size: 18px;
+        color: #1b75bc;
+      }
+      h1 {
+        font-size: 70px;
+        font-weight: 900;
+        line-height: 80px;
+      }
+      p {
+        font-size: 17px;
+      }
+      button {
+        border: 0;
+        background-color: #1b75bc;
+        border: none;
+        color: white;
+        padding: 12px 42px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 30px;
+        margin: 20px 0 40px 0;
 
-    .water-heading {
-        margin: 80px 0;
-
-        .main-water-heading {
-            box-sizing: border-box;
-            margin: auto;
-            min-width: 0;
-            flex-direction: column;
-            width: 70%;
-            align-items: center;
-            display: flex;
-
-            h1 {
-                font-size: 56px;
-                font-weight: 600;
-                line-height: 80px;
-                padding: 0 0 16px 0;
-                letter-spacing: 2px;
-            }
-
-            p {
-                font-size: 20px;
-                line-height: 32px;
-                padding: 0;
-                text-align: center;
-            }
-        }
-    }
-
-    .gal-water {
-        display: grid;
-        max-width: 1060px;
-        grid-template-columns: 100%;
-        grid-gap: 40px;
         @include md {
-            grid-template-columns: 50% 50%;
+          margin: 20px 0 0 0;
         }
-    
-
-        .water-gal {
-            .sec-1 {
-                width: 100%;
-                height: 850px;
-                background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.34217436974789917) 87%),  url(https://res.cloudinary.com/larq/image/upload/c_scale,q_auto,w_800/v1637236194/assets/spa/v2/shop/season-sipping.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 5px;
-                padding: 60px;
-                display: flex;
-                flex-direction: column;
-                justify-content: end;
-
-                h1 {
-                    margin: 0;
-                    font-size: 2.8rem;
-                    line-height: 3.5rem;
-                    color: #ffffff;
-                    padding: 0;
-                    font-weight: 600;
-                    letter-spacing: 2px;
-                    padding-bottom: 10px;
-                }
-
-                p {
-                    font-size: 1rem;
-                    line-height: 1.6rem;
-                    color: #ffffff;
-                    margin-bottom: 1.33333rem;
-                    padding: 0;
-                }
-
-                button {
-                    width: 35%;
-                    font-size: 16px;
-                    padding: 10px 30px;
-                    color: #fff;
-                    background-color: #ffffff00;
-                    border: 2px solid #ffffff;
-                    cursor: pointer;
-                }
-
-            }
-
-            .sec-2 {
-                width: 100%;
-                padding: 90px;
-                background-color: #f5f5f5;
-                height: 850px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                img {
-                    width: 100%;
-                }
-
-                P {
-                    text-align: center;
-                    font-size: 1rem;
-                    line-height: 1.6rem;
-                    margin: 0;
-                    color: #153a5b;
-                    padding: 10px 0 20px 0;
-                }
-
-                h5 {
-                    text-align: center;
-                    font-size: 1rem;
-                    line-height: 1.6rem;
-                    margin: 0;
-                    color: #153a5b;
-                    padding: 0px 0 20px 0;
-                }
-
-
-                h1 {
-                    font-size: 2.13333rem;
-                    line-height: 3.2rem;
-                    padding: 0;
-                }
-
-                span {
-                    margin: 2rem 0rem 0rem 0rem;
-                    font-size: 0.86667rem;
-                    line-height: 1.2rem;
-                    color: #153a5b;
-                
-                }
-            }
-            .sec-4 {
-                width: 100%;
-                height: 850px;
-                background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.34217436974789917) 87%), url(https://res.cloudinary.com/larq/image/upload/c_scale,q_auto,w_800/v1640728049/assets/spa/v2/shop/obsidian-black-brilliance-in-a-bottle.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 5px;
-                padding: 60px;
-                display: flex;
-                flex-direction: column;
-                justify-content: end;
-
-                h1 {
-                    margin: 0;
-                    font-size: 2.8rem;
-                    line-height: 3.5rem;
-                    color: #ffffff;
-                    padding: 0;
-                    font-weight: 600;
-                    letter-spacing: 2px;
-                    padding-bottom: 10px;
-                }
-
-                p {
-                    font-size: 1rem;
-                    line-height: 1.6rem;
-                    color: #ffffff;
-                    margin-bottom: 1.33333rem;
-                    padding: 0;
-                }
-
-                button {
-                    width: 35%;
-                    font-size: 16px;
-                    padding: 10px 30px;
-                    color: #fff;
-                    background-color: #ffffff00;
-                    border: 2px solid #ffffff;
-                    cursor: pointer;
-                }
-
-            }
-            .sec-5 {
-                width: 100%;
-                height: 850px;
-                background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.34217436974789917) 80%), url(https://res.cloudinary.com/larq/image/upload/q_auto,f_auto,w_600/v1635931997/assets/spa/v2/content/product/bottle-filtered/LARQ_Bottle_Filtered_HP_Block.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 5px;
-                padding: 60px;
-                display: flex;
-                flex-direction: column;
-                justify-content: end;
-
-                h1 {
-                    margin: 0;
-                    font-size: 2.8rem;
-                    line-height: 3.5rem;
-                    color: #ffffff;
-                    padding: 0;
-                    font-weight: 600;
-                    letter-spacing: 2px;
-                    padding-bottom: 10px;
-                }
-
-                p {
-                    font-size: 1rem;
-                    line-height: 1.6rem;
-                    color: #ffffff;
-                    margin-bottom: 1.33333rem;
-                    padding: 0;
-                }
-
-                button {
-                    width: 35%;
-                    font-size: 16px;
-                    padding: 10px 30px;
-                    color: #fff;
-                    background-color: #ffffff00;
-                    border: 2px solid #ffffff;
-                    cursor: pointer;
-                }
-
-            }
-            .sec-8 {
-                width: 100%;
-                height: 850px;
-                background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.34217436974789917) 80%), url(https://res.cloudinary.com/larq/image/upload/c_scale,q_auto,w_800/v1676560899/assets/spa/v2/shop/obsidian-black-double-wall-insulated.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 5px;
-                padding: 60px;
-                display: flex;
-                flex-direction: column;
-                justify-content: end;
-
-                h1 {
-                    margin: 0;
-                    font-size: 2.6rem;
-                    line-height: 3.5rem;
-                    color: #ffffff;
-                    padding: 0;
-                    font-weight: 600;
-                    letter-spacing: 2px;
-                    padding-bottom: 10px;
-                }
-
-                p {
-                    font-size: 1rem;
-                    line-height: 1.6rem;
-                    color: #ffffff;
-                    margin-bottom: 1.33333rem;
-                    padding: 0;
-                }
-                h4 {
-                    margin: 0rem 0rem 2rem 0rem;
-                    font-size: 0.76667rem;
-                    line-height: 1.2rem;
-                    color: #fff;
-                    font-weight: 400;
-                    letter-spacing: 1px;
-                }
-
-                button {
-                    width: 35%;
-                    font-size: 16px;
-                    padding: 10px 30px;
-                    color: #fff;
-                    background-color: #ffffff00;
-                    border: 2px solid #ffffff;
-                    cursor: pointer;
-                }
-
-            }
-        }
+      }
     }
-}
+    .wChild3 {
+      h3 {
+        letter-spacing: 1px;
+        font-size: 18px;
+        color: #1b75bc;
+      }
+      h1 {
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 60px;
+      }
+      p {
+        font-size: 17px;
+        letter-spacing: 0.5px;
+      }
+      button {
+        border: 0;
+        background-color: #1b75bc;
+        border: none;
+        color: white;
+        padding: 12px 42px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 30px;
+        margin: 20px 0 40px 0;
 
-
-.tabs1 {
-    cursor: pointer;
-    width: 80px;
-    height: 80px;
-}
-
-.tabs2 {
-    cursor: pointer;
-    width: 55px;
-    height: 55px;
-}
-.tabs3 {
-    cursor: pointer;
-    width: 64px;
-    height: 64px;
-}
-
-
-
-.active-tabs1 {
-    border: 1px solid #000000c5;
-    border-radius: 1px;
-}
-
-.active-tabs2 {
-    border: 1px solid #000000c5;
-    border-radius: 1px;
-}
-.active-tabs3 {
-    border: 1px solid #000000c5;
-    border-radius: 1px;
-}
-
-.active-tabs1::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 40px;
-    width: 100%;
-}
-
-.active-tabs2::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 40px;
-    width: 100%;
-}
-.active-tabs3::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 40px;
-    width: 100%;
-}
-
-.content-tabs1 {
-    flex-grow: 1;
-}
-
-.content1 {
-    display: none;
-}
-
-.active-content1 {
-    display: block;
-}
-
-div.tabz {
-    display: flex;
-    flex-direction: row;
+        @include md {
+          margin: 20px 0 0 0;
+        }
+      }
+    }
+    .wChild4 {
+      display: flex;
+      justify-content: end;
+      img {
+        width: 484.5px;
+        height: 652.17px;
+      }
+    }
+  }
+  .wBaner1 {
+    display: grid;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-}
+    margin: 100px 0;
+    .wChild {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        padding: 20px 0px 80px 0px;
+      }
+    }
+    .listproddst {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      .product-rcard {
+        img {
+          width: 390px;
+        }
+      }
+      .dtls {
+        padding-left: 25px;
+        padding-top: 28px;
+        padding-bottom: 40px;
+        border-left: 1px solid #00000017;
+        border-bottom: 1px solid #00000017;
+        border-right: 1px solid #00000017;
+        margin-top: -6px;
+        cursor: pointer;
+        li {
+          font-size: 16px;
+          list-style-type: none;
+          letter-spacing: .2px;
+          padding-bottom: 15px;
+          cursor: pointer;
+        }
+        li:hover {
+          color: #1b75bc;
+        }
+        h5{
+          font-size: 18px;
+          font-weight: 500;
+        }
+        h5:hover {
+          color: #1b75bc;
+        }
+        h6{
+          font-size: 20px;
+          padding-top: 15px;
 
-div.tabz2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8px;
+        }
+      }
+    }
+  }
 }
-.prodsssz{
-    padding: 40px 0 300px 0;
+.dtls:hover{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+}
+.wChild7 {
+  h3 {
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #1b75bc;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60px;
+  }
+  li {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    list-style-type: disclosure-closed;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-right: 40px;
+  }
+  li::marker{
+    color: #1b75bc;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 2.5;
+  }
+  #text{
+    font-size: 27px;
+  }
+}
+.wChild8 {
+  display: flex;
+  justify-content: end;
+  img {
+    width: 513px;
+    height: 564px;
+  }
+}
+.wChild9 {
+  display: flex;
+  justify-content: start;
 }
