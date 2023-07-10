@@ -12,6 +12,13 @@
     grid-template-columns: 50% 50%;
     align-items: center;
     justify-content: space-between;
+    .wChild2{
+      justify-content: end;
+      display: flex;
+      img{
+        width: 480px;
+      }
+    }
     .wChild1 {
       h3 {
         letter-spacing: 1px;
@@ -111,6 +118,7 @@
       .product-rcard {
         img {
           width: 390px;
+          cursor: pointer;
         }
       }
       .dtls {
@@ -190,5 +198,38 @@
 }
 .wChild9 {
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  img{
+    width: 400px;
+    height: 590px;
+  }
+}
+.wBaner9 {
+  max-width: 1100px;
+  height: 700px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 40% 53%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wChild10 {
+  h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60px;
+  }
+  p {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+  }
+}
+.wChild12 {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 400px;
+    height: 400px;
+  }
 }

@@ -65,14 +65,14 @@ const RelatedProducts = ({ categoryId, productId, innerPage, headingText }) => {
               toggleState === 2 ? "content1  active-content1" : "content1"
             }
           >
-           <Airp />
+            <Airp /> 
           </div>
           <div
             className={
               toggleState === 3 ? "content1  active-content1" : "content1"
             }
           >
-            <Waterp />
+            <Waterp /> 
           </div>
         </div>
       </div>

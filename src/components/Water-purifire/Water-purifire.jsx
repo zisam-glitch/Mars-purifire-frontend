@@ -2,10 +2,14 @@ import "./Water-purifire.scss";
 import BanerImg from "../../assets/w-baner.png";
 import Left from "../../assets/category/left.jpg";
 import Right from "../../assets/category/right.jpg";
+import Info from "../../assets/category/info.jpg";
+import Middel from "../../assets/category/middel.jpg";
 import Img1 from "../../assets/category/img1.png";
 import Img2 from "../../assets/category/img2.png";
+import { useNavigate } from "react-router-dom";
 
 const WaterPurifier = () => {
+  const navigate = useNavigate();
   return (
     <div className="wContainer">
       <div className="wBaner">
@@ -16,7 +20,7 @@ const WaterPurifier = () => {
             That’s 16 generations. 99% of plastic causes climate change. How do
             we create a future in which both people and nature can thrive.
           </p>
-          <button>BUY NOW</button>
+          <button onClick={() => navigate("/shop")} >BUY NOW</button>
         </div>
         <div className="wChild2">
           <img src={BanerImg} alt="" />
@@ -42,7 +46,6 @@ const WaterPurifier = () => {
             Self Cleaning Bottle – Stops bacteria and mold from breeding in your
             water bottle.
           </p>
-          <button>BUY NOW</button>
         </div>
         <div className="wChild4">
           <img src={Left} alt="" />
@@ -53,20 +56,20 @@ const WaterPurifier = () => {
           <h1>Trending now</h1>
         </div>
         <div className="listproddst">
-          <div className="product-rcard">
+          <div className="product-rcard"onClick={() => navigate("/product/achilles-water-bottle-white")}>
             <img src={Img1} alt="" />
-            <div className="dtls">
-              <li>UV water bottle</li>
-              <h5>Achilles Water Bottle White</h5>
-              <h6>£49.99</h6>
+            <div className="dtls" onClick={() => navigate("/shop/achilles-water-bottle-white")}>
+              <li onClick={() => navigate("/product/achilles-water-bottle-white")}>UV water bottle</li>
+              <h5 onClick={() => navigate("/product/achilles-water-bottle-white")}>Achilles Water Bottle White</h5>
+              <h6 onClick={() => navigate("/product/achilles-water-bottle-white")}>£49.99</h6>
             </div>
           </div>
-          <div className="product-rcard">
+          <div className="product-rcard" onClick={() => navigate("/product/achilles-water-bottle-black")}>
             <img src={Img2} alt="" />
-            <div className="dtls">
-              <li>UV water bottle</li>
-              <h5>Achilles Water Bottle Black</h5>
-              <h6>£49.99</h6>
+            <div className="dtls" onClick={() => navigate("/shop/achilles-water-bottle-black")}>
+              <li onClick={() => navigate("/product/achilles-water-bottle-black")} >UV water bottle</li>
+              <h5 onClick={() => navigate("/product/achilles-water-bottle-black")} >Achilles Water Bottle Black</h5>
+              <h6 onClick={() => navigate("/product/achilles-water-bottle-black")} >£49.99</h6>
             </div>
           </div>
         </div>
@@ -95,30 +98,48 @@ const WaterPurifier = () => {
           <img src={Right} alt="" />
         </div>
       </div>
-      <div className="wBaner">
+      <div className="wBaner9">
         <div className="wChild9">
-          <img src={Left} alt="" />
+          <img src={Middel} alt="" />
         </div>
-        <div className="wChild3">
-          <h3>WELCOME TO ACHILLES WATER!</h3>
-          <h1>Add A Purpose To Your Drinking Habits</h1>
+        <div className="wChild10">
+          <h1>Better Filtration</h1>
           <p>
-            Achilles bottle is all set to break the market of water bottles.
+            UV- C is sterilisation of the future – Achilles powerful UV-C light
+            rays are the same wavelength as the UV used to sanitise operating
+            rooms and water treatment plants.
             <br />
             <br />
-            Protect yourself from bacteria and water-based impurities by getting
-            yourself an Achilles Bottle.
+            We use innovative technology that helps to ensure water quality
+            inside the system is fully clean, avoiding any bio-contaminant
+            growth.
             <br />
             <br />
-            Replaces 500,000 Water Bottles – Reduces plastic waste and needless
-            spend of bottled water. BPA and Plastic free – enjoy fresh water
-            without replacement filters and with chemical free purification.
+            Drinkable water at your fingertip – High tech, chemical free
+            purification. Best alternative to boiled water.
             <br />
             <br />
-            Self Cleaning Bottle – Stops bacteria and mold from breeding in your
-            water bottle.
+            Every minute, 1 million plastic bottles end up in the garbage,
+            resulting in an average of 3 single-use bottles per person, per
+            week!
           </p>
-          <button>BUY NOW</button>
+        </div>
+      </div>
+      <div className="wBaner">
+        <div className="wChild7">
+          <h1>One Small Change</h1>
+          <li>Plastic in water bottles takes 500-700 years to dissolve.</li>
+          <li>Plastic in water bottles is killing animals and ocean life.</li>
+          <li>Pure water in 60 seconds.</li>
+          <li>Plastic in water bottles is entering our food chain.</li>
+          <li>
+            Time to leave behind the reusable plastic bottles causing regular
+            damage to our planet. Time to embrace the best new water filtration
+            system today.
+          </li>
+        </div>
+        <div className="wChild12">
+          <img src={Info} alt="" />
         </div>
       </div>
     </div>
