@@ -286,6 +286,11 @@
 .wChild9 {
   display: flex;
   justify-content: center;
+  margin-bottom: -33px;
+  @include md {
+    margin-bottom: 0;
+  }
+
   img {
     width: 400px;
   }
