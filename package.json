@@ -10,6 +10,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/material": "^5.11.15",
     "@stripe/react-stripe-js": "^1.16.1",
     "@stripe/stripe-js": "^1.46.0",
@@ -60,6 +61,6 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.1"
+    "tailwindcss": "^3.3.2"
   }
 }
