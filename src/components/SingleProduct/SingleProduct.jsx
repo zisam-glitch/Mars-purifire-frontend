@@ -2,14 +2,25 @@ import { useContext, useState } from "react";
 import { Context } from "../../utils/context";
 import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
-import RelatedProducts from "./RelatedProducts/RelatedProducts";
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { FaCartPlus } from "react-icons/fa";
 import "./SingleProduct.scss";
 import { Helmet } from "react-helmet";
+import "swiper/css";
+import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import { FreeMode, Navigation, Thumbs } from 'swiper';
+
+  // 
 
 const SingleProduct = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const markdown = `Just a link: https://reactjs.com.`;
   const [quantity, setQuantity] = useState(1);
   const { slug } = useParams();
@@ -44,13 +55,84 @@ const SingleProduct = () => {
       <div className="layout">
         <div className="single-product-page">
           <div className="left">
-            <img
-              src={
-                process.env.REACT_APP_DEV_URL +
-                product.image.data.attributes.url
-              }
-              alt=""
-            />
+            <Swiper
+              style={{
+                '--swiper-navigation-color': '#fff',
+                '--swiper-pagination-color': '#fff',
+              }}
+              loop={true}
+              spaceBetween={10}
+              navigation={true}
+              thumbs={{ swiper: thumbsSwiper }}
+              modules={[FreeMode, Navigation, Thumbs]}
+              className="mySwiper2"
+            >
+
+              <SwiperSlide>
+                <img
+                  src={
+                    process.env.REACT_APP_DEV_URL +
+                    product.image.data[0].attributes.url
+                  }
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={
+                    process.env.REACT_APP_DEV_URL +
+                    product.image.data[1].attributes.url
+                  }
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={
+                    process.env.REACT_APP_DEV_URL +
+                    product.image.data[2].attributes.url
+                  }
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={
+                    process.env.REACT_APP_DEV_URL +
+                    product.image.data[3].attributes.url
+                  }
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={
+                    process.env.REACT_APP_DEV_URL +
+                    product.image.data[4].attributes.url
+                  }
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={
+                    process.env.REACT_APP_DEV_URL +
+                    product.image.data[5].attributes.url
+                  }
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={
+                    process.env.REACT_APP_DEV_URL +
+                    product.image.data[6].attributes.url
+                  }
+                  alt=""
+                />
+              </SwiperSlide>
+
+            </Swiper>
           </div>
           <div className="right">
             <span className="name">{product.title}</span>
@@ -115,9 +197,9 @@ const SingleProduct = () => {
                 }
               >
                 <div className="descp">
-               <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]}>
+                  <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]}>
                     {product.description}
-                </ReactMarkdown>
+                  </ReactMarkdown>
                 </div>
               </div>
 
@@ -127,9 +209,9 @@ const SingleProduct = () => {
                 }
               >
                 <div className="spec">
-                <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]}>
-                  {product.specification}
-                </ReactMarkdown>
+                  <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]}>
+                    {product.specification}
+                  </ReactMarkdown>
                 </div>
               </div>
               <div
@@ -138,7 +220,7 @@ const SingleProduct = () => {
                 }
               >
                 <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]}>
-                    {product.support}
+                  {product.support}
                 </ReactMarkdown>
               </div>
             </div>

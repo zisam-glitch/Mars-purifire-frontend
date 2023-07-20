@@ -1,6 +1,5 @@
 import "./testimonial.scss";
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BsFillChatQuoteFill } from "react-icons/bs";
 

@@ -1,7 +1,10 @@
 import "./Water-purifire.scss";
-import BanerImg from "../../assets/w-baner.png";
+import BanerImg from "../../assets/category/Picture3.jpg";
 import Left from "../../assets/category/left.jpg";
+import Typewriter from "typewriter-effect"
 import Right from "../../assets/category/right.jpg";
+import Picture1 from "../../assets/category/Picture1.jpg";
+import Picture2 from "../../assets/category/Picture2.jpg";
 import Info from "../../assets/category/info.jpg";
 import Middel from "../../assets/category/middel.jpg";
 import Img1 from "../../assets/category/img1.png";
@@ -12,20 +15,35 @@ const WaterPurifier = () => {
   const navigate = useNavigate();
   return (
     <div className="wContainer">
-      <div className="wBaner">
-        <div className="wChild1">
-          <h3>THE EASIEST WAY TO GET FILTERED WATER!</h3>
-          <h1>The Easiest Way to Get Filtered Water!</h1>
-          <p>
-            That’s 16 generations. 99% of plastic causes climate change. How do
-            we create a future in which both people and nature can thrive.
-          </p>
-          <button onClick={() => navigate("/shop")} >BUY NOW</button>
-        </div>
-        <div className="wChild2">
-          <img src={BanerImg} alt="" />
-        </div>
-      </div>
+      <div className="cont">
+                <div className="image-content-mob">
+                    <img src={BanerImg} alt="Mars Purifere" />
+                </div>
+                <div className="maincontent">
+
+                    <div className="text-content">
+                        <div className="typewriter">
+                            <Typewriter options={{
+                                autoStart: true,
+                                loop: true,
+                                delay: 40,
+                                strings: ["Smart", "Water", "Bottle",]
+                            }} />
+                        </div>
+                        <div className="heading">
+                            <h1 className="heading-text1">Water Purification</h1>
+                            <h1 className="heading-text2">System</h1>
+                            <span className="desc">Buy with confidence when you choose a Achilles Water Bottle</span>
+                        </div>
+                        <div className="shop-btn">
+                            <button className="shop-now" onClick={() => navigate("/shop")} >Shop now</button>
+                        </div>
+                    </div>
+                    <div className="image-content">
+                        <img src={BanerImg} alt="Mars Purifere" />
+                    </div>
+                </div>
+            </div>
       <div className="wBaner">
         <div className="wChild3">
           <h3>WELCOME TO ACHILLES WATER!</h3>
@@ -95,7 +113,8 @@ const WaterPurifier = () => {
           </li>
         </div>
         <div className="wChild8">
-          <img src={Right} alt="" />
+          <img src={Picture1} alt="" />
+          <img src={Picture2} alt="" />
         </div>
       </div>
       <div className="wBaner9">

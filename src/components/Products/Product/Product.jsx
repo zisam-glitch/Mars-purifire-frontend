@@ -15,7 +15,7 @@ const Product = ({ data, id }) => {
                     <img
                         src={
                             process.env.REACT_APP_DEV_URL +
-                            data.image.data.attributes.url
+                            data.image.data[0].attributes.url
                         }
                     />
                 </div>
