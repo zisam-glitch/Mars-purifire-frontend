@@ -49,48 +49,48 @@
     }
 
     .typewriter {
-        font-size: 24px;
+        font-size: 40px;
         font-weight: 500;
         color: #1b75bc;
-        padding: 0 0 10px 0;
+        padding: 0 0 25px 0;
         text-align: center;
         font-family: 'Roboto Condensed', sans-serif;
 
 
         @include md {
-            font-size: 69px;
+            font-size: 80px;
             font-weight: 800;
-            padding: 0 0 40px 0;
+            padding: 0 0 48px 0;
             text-align: start;
         }
     }
 
     .heading-text1 {
-        font-size: 24px;
+        font-size: 40px;
         font-weight: 500;
         color: #000;
         text-align: center;
         font-family: 'Roboto Condensed', sans-serif;
-        padding-bottom: 5px;
+        padding-bottom: 20px;
 
         @include md {
-            font-size: 69px;
+            font-size: 80px;
             font-weight: 800;
-            padding-bottom: 40px;
+            padding-bottom: 45px;
             text-align: start;
         }
     }
 
     .heading-text2 {
-        font-size: 24px;
+        font-size: 40px;
         font-weight: 500;
         color: #000;
         text-align: center;
         font-family: 'Roboto Condensed', sans-serif;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
 
         @include md {
-            font-size: 69px;
+            font-size: 80px;
             font-weight: 800;
             padding-bottom: 50px;
             text-align: start;

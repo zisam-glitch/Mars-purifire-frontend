@@ -2,10 +2,11 @@
 
 .products{
     display: grid;
-    gap: 35px;
+    gap: 55px;
     grid-template-columns: 1fr;
     @include md {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 80px;
     }
 }
 .pros {
@@ -20,8 +21,13 @@
         margin-bottom: 7px;
         text-align: center;
         img{
-            width: 248.75px;
-            height: 248.75px;
+            width: 100%;
+            height: 100%;
+            @include md {  
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+            }
 
         }
     }

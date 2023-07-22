@@ -49,7 +49,7 @@ const Banner = () => {
                         <div className="heading">
                             <h1 className="heading-text1">Air Purification</h1>
                             <h1 className="heading-text2">System</h1>
-                            <span className="desc">Buy with confidence when you choose a Mars Purifier Unit,<br /> designed for use in clinical and regulatory enviroments.</span>
+                            <span className="desc">Buy with confidence when you choose a Mars Purifier Unit, designed for use in clinical and regulatory enviroments.</span>
                         </div>
                         <div className="shop-btn">
                             <button className="shop-now" onClick={() => navigate("/shop")} >Shop now</button>

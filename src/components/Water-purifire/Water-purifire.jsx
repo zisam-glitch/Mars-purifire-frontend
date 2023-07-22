@@ -1,5 +1,5 @@
 import "./Water-purifire.scss";
-import BanerImg from "../../assets/category/Picture3.jpg";
+import BanerImg from "../../assets/category/Picture3.png";
 import Left from "../../assets/category/left.jpg";
 import Typewriter from "typewriter-effect"
 import Right from "../../assets/category/right.jpg";
@@ -16,10 +16,10 @@ const WaterPurifier = () => {
   return (
     <div className="wContainer">
       <div className="cont">
-                <div className="image-content-mob">
+                <div className="image-content-mobr">
                     <img src={BanerImg} alt="Mars Purifere" />
                 </div>
-                <div className="maincontent">
+                <div className="maincontents">
 
                     <div className="text-content">
                         <div className="typewriter">
@@ -96,6 +96,7 @@ const WaterPurifier = () => {
         <div className="wChild7">
           <h3>BETTER FILTRATION</h3>
           <h1>The Achilles Bottle</h1>
+          <ul className="assdkfjuhfu">
           <li>
             Powered by deep UVC – effectively eliminate 99.99% of mold, bacteria
             and viruses from water, with nothing but UV light exposure.
@@ -111,6 +112,7 @@ const WaterPurifier = () => {
             The bottle activates the cleaning system every 2 hours to ensure
             that the bottle and the water inside are free of any odour.
           </li>
+          </ul>
         </div>
         <div className="wChild8">
           <img src={Picture1} alt="" />
@@ -144,9 +146,10 @@ const WaterPurifier = () => {
           </p>
         </div>
       </div>
-      <div className="wBaner">
+      <div className="wBaner55">
         <div className="wChild7">
           <h1>One Small Change</h1>
+          <ul className="assdkfjuhfu">
           <li>Plastic in water bottles takes 500-700 years to dissolve.</li>
           <li>Plastic in water bottles is killing animals and ocean life.</li>
           <li>Pure water in 60 seconds.</li>
@@ -156,6 +159,7 @@ const WaterPurifier = () => {
             damage to our planet. Time to embrace the best new water filtration
             system today.
           </li>
+          </ul>
         </div>
         <div className="wChild12">
           <img src={Info} alt="" />

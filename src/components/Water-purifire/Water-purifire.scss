@@ -9,16 +9,18 @@
   }
   .wBaner {
     max-width: 1100px;
-    height: 900px;
+    height: auto;
     margin: auto;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
     justify-content: space-between;
     flex-direction: column-reverse;
+    gap: 0;
     @include md {
       grid-template-columns: 50% 50%;
-      height: 700px;
+      height: auto;
+      gap: 40px;
     }
     .wChild2 {
       justify-content: end;
@@ -108,8 +110,10 @@
         font-size: 17px;
         letter-spacing: 0.5px;
         text-align: center;
+        padding-bottom: 75px;
         @include md {
           text-align: start;
+          padding-bottom: 0px;
         }
 
       }
@@ -150,7 +154,7 @@
     justify-content: center;
     margin: 0 0 100px 0;
     @include md {
-      margin: 100px 0;
+      margin: 100px 0 190px 0;
     }
     .wChild {
       display: grid;
@@ -236,8 +240,6 @@
     font-weight: 900;
     line-height: 40px;
     text-align: center;
-    padding: 40px 0;
-    margin-top: 60px;
     @include md {
       text-align: start;
       font-size: 50px;
@@ -287,9 +289,9 @@
 .wChild9 {
   display: flex;
   justify-content: center;
-  margin-bottom: -33px;
+  padding-bottom: 70px;
   @include md {
-    margin-bottom: 0;
+    padding-bottom: 0px;
   }
 
   img {
@@ -298,16 +300,15 @@
 }
 .wBaner9 {
   max-width: 1100px;
-  height: 1200px;
+  height: auto;
   margin: auto;
   display: grid;
   grid-template-rows: 40% 60%;
   align-items: center;
   justify-content: space-between;
-  margin-top: -200px;
   @include md {
     grid-template-columns: 40% 53%;
-    margin-top: 200px;
+    margin-top: 332px;
     height: auto;
   }
 }
@@ -318,7 +319,7 @@
     font-weight: 900;
     line-height: 40px;
     text-align: center;
-    padding: 140px  0 40px 0;
+    padding: 40px 0;
     @include md {
       text-align: start;
       font-size: 50px;
@@ -337,5 +338,167 @@
   justify-content: center;
   img {
     width: 400px;
+  }
+}
+.maincontents {
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  min-height: 40vh;
+  grid-auto-flow: columns dense;
+  text-align: center;
+  padding-bottom: 0px;
+
+  @include md {
+      padding: 0;
+      grid-template-columns: 1fr 1fr;
+      min-height: 80vh;
+      text-align: start;
+      padding-bottom: 100px;
+  }
+
+  h1 {
+      padding: 5px 0;
+
+      @include md {
+          padding: 30px 0;
+      }
+  }
+
+  .typewriter {
+      font-size: 40px;
+      font-weight: 500;
+      color: #1b75bc;
+      padding: 0 0 25px 0;
+      text-align: center;
+      font-family: 'Roboto Condensed', sans-serif;
+
+
+      @include md {
+          font-size: 69px;
+          font-weight: 800;
+          padding: 0 0 40px 0;
+          text-align: start;
+      }
+  }
+
+  .heading-text1 {
+      font-size: 40px;
+      font-weight: 500;
+      color: #000;
+      text-align: center;
+      font-family: 'Roboto Condensed', sans-serif;
+      padding-bottom: 20px;
+
+      @include md {
+          font-size: 69px;
+          font-weight: 800;
+          padding-bottom: 40px;
+          text-align: start;
+      }
+  }
+
+  .heading-text2 {
+      font-size: 40px;
+      font-weight: 500;
+      color: #000;
+      text-align: center;
+      font-family: 'Roboto Condensed', sans-serif;
+      padding-bottom: 40px;
+
+      @include md {
+          font-size: 69px;
+          font-weight: 800;
+          padding-bottom: 50px;
+          text-align: start;
+      }
+  }
+
+  .desc {
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #000;
+      margin-top: -10px;
+      text-align: center;
+
+      @include md {
+          text-align: start;
+
+      }
+  }
+
+  .shop-now {
+      border: 0;
+      background-color: #1b75bc;
+      border: none;
+      color: white;
+      padding: 12px 42px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 30px;
+      margin: 20px 0 40px 0;
+
+      @include md {
+          margin: 20px 0 0 0;
+      }
+
+  }
+
+  .shop-now:hover {
+      background-color: #154d77;
+  }
+
+
+
+  .image-content {
+      img {
+          width: 100%;
+          display: none;
+
+          @include md {
+              width: 100%;
+              display: block;
+          }
+      }
+  }
+}
+.image-content-mobr {
+  img {
+      width: 100%;
+      padding: 10px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      @include md {
+          width: 100%;
+          display: none;
+      }
+  }
+}
+.assdkfjuhfu{
+  padding: 0;
+  padding-bottom: 100px;
+  @include md {
+    padding: 0;
+}
+}
+.wBaner55 {
+  max-width: 1100px;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  padding-bottom: 100px;
+  @include md {
+    grid-template-columns: 50% 50%;
+    height: auto;
+    padding-bottom: 200px;
   }
 }
