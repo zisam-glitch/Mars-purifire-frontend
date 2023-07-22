@@ -113,24 +113,6 @@ const SingleProduct = () => {
                   alt=""
                 />
               </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src={
-                    process.env.REACT_APP_DEV_URL +
-                    product.image.data[5].attributes.url
-                  }
-                  alt=""
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src={
-                    process.env.REACT_APP_DEV_URL +
-                    product.image.data[6].attributes.url
-                  }
-                  alt=""
-                />
-              </SwiperSlide>
 
             </Swiper>
           </div>
