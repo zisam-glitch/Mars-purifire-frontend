@@ -26,12 +26,16 @@ import vs8 from "../../../assets/category/8.webp"
 import gal1 from "../../../assets/category/1331.webp"
 import gal2 from "../../../assets/category/1332.webp"
 import gal3 from "../../../assets/category/1333.webp"
+import Asl from "./asl"
 
 const Banner = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div className="cont">
+        <section>
+            <Asl/>
+        </section>
+            {/* <div className="cont">
                 <div className="image-content-mob">
                     <img src={BannerImg} alt="Mars Purifere" />
                 </div>
@@ -59,7 +63,7 @@ const Banner = () => {
                         <img src={BannerImg} alt="Mars Purifere" />
                     </div>
                 </div>
-            </div>
+            </div> */}
             <section className="product-s">
                 <h1>Featured Products</h1>
                 <div className="all-products">

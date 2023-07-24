@@ -2,13 +2,8 @@ import "./testimonial.scss";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BsFillChatQuoteFill } from "react-icons/bs";
-
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
 import { Pagination } from "swiper";
 
 export default function App() {
