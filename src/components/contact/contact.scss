@@ -2,20 +2,19 @@
 
 .common-heading{ 
     font-size: 40px !important;
-    text-transform: uppercase !important;
-    letter-spacing: 3px !important;
-    line-height: 60px;
+    line-height: 40px;
     text-align: center;
     padding: 60px 40px 20px 40px;
     @include md {
-        padding: 80px 0 0 0;
-        font-size: 50px !important;
+        padding: 80px 0 20px 0;
+        font-size: 45px !important;
+        font-weight: 700;
     }
 }
 .texthed{
     font-size: 18px;
     line-height: 35px;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     padding: 0 40px 30px 40px;
     text-align: center;
     @include md {
@@ -89,7 +88,7 @@
     max-width: 1100px;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
+    align-items: start;
     grid-gap: 30px;
     padding: 40px;
     @include md {
@@ -100,28 +99,31 @@
     .othr{
         align-items: center;
         h3{
-            font-size: 35px;
+            font-size: 28px;
             line-height: 35px;
-            letter-spacing: 1.5px;
-            padding-bottom: 15px;
+            letter-spacing: 0px;
+            padding-bottom: 20px;
+            font-weight: 600;
+            color: #000000b7;
         }
         h4{
-            font-size: 20px;
-            line-height: 28px;
-            letter-spacing: 1.5px;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.5px;
             padding-bottom: 7px;
+            font-weight: 600;
         }
         p{
             font-size: 16px;
             line-height: 18px;
-            letter-spacing: 1px;
-            padding-bottom: 10px;
+            letter-spacing: 0.5px;
+            padding-bottom: 18px;
         }
         svg{
-            padding: 5px;
+            padding: 8px;
             color: #fff;
             background-color: #1b75bc;
-            border-radius: 7px;
+            border-radius: 50%;
             margin-right: 7px;
             margin-top: 12px;
             transition: all 0.2s;
@@ -135,4 +137,7 @@
 }
 .wraper{
     padding-bottom: 200px;
+}
+.social-icons{
+    display: flex;
 }
